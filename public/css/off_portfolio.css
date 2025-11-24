@@ -104,9 +104,10 @@ body {
     padding: 0;
     margin: 0;
 
-    display: grid; gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    display: flex;
+    gap: 16px;
 }
+
 
 .icones1 li {
     display: grid;
@@ -114,10 +115,10 @@ body {
     min-height: 100px;
 
     background: #f7fbfd;
-    border: 1px solid rgba(0,0,0,.08);
+    border: 0px solid rgba(0,0,0,.08);
     border-radius: 12px;
 }
-.icones1 img { max-width: 72px; max-height: 72px; }
+.icones1 img { min-width: 72px; min-height: 72px; }
 
 /* --------- footer --*/
 .footer {
