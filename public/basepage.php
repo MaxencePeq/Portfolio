@@ -43,7 +43,10 @@ HTML); // <- Card 1
 $webpage->appendContent(<<<HTML
 <div class="card">
     <div class="card2">
-    
+        <h2 class="titre2">Parcours</h2>
+        <p class="txt1">Diplômé d’un baccalauréat général (Lycée Franklin Roosevelt, Reims — 2024) avec spécialités NSI et Mathématiques.</p>
+        <p class="txt1">Actuellement en 2<sup>e</sup> année d’IUT Informatique à Reims (spécialisation développement C#).</p>
+        <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique en début d’année, puis un petit jeu web Idle/Autoclicker pendant l’été.</p>
     </div>
 </div>
 HTML);

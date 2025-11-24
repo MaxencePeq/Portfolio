@@ -67,7 +67,7 @@ body {
 }
 
 .titre1 { margin: 0 0 8px; font-size: 36px; }
-.txt1 { color: #334155; line-height: 1.6; margin: 0 0 16px; }
+.txt1 { color: #334155; line-height: 1.6; margin: 0 0 4px; }
 
 .card1-img img {
     width: 280px; height: auto; display: block;
@@ -92,4 +92,5 @@ body {
 /* --------- card2  --*/
 
 .card2{
+    font-size: 18px;
 }
