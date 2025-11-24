@@ -19,7 +19,7 @@ $year = date('Y');
     </nav>
 </header>
 
-<main class="zone1">
+<main class="zone1">s
     <!-- Bloc 1 : “hero” -->
     <section class="card1 bloc1">
         <div class="bloc1-img">

@@ -17,6 +17,7 @@ $webpage->appendContent(<<<HTML
 HTML);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
+<div class="JusteHereForMakePlace"></div>
 <div class="card">
     <div class="card1">
         <div class="card1-img">
@@ -37,6 +38,14 @@ $webpage->appendContent(<<<HTML
     </div>
 </div>
 
+HTML); // <- Card 1
+
+$webpage->appendContent(<<<HTML
+<div class="card">
+    <div class="card2">
+    
+    </div>
+</div>
 HTML);
 
 

@@ -4,4 +4,4 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-header('location: playpage.php');
+header('location: basepage.php');
