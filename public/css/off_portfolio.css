@@ -7,6 +7,9 @@ body {
 /* --------- Card - Templates --*/
 
 .card{
+    display: flex;
+    flex-direction: row;
+
     background: #fff;
 
     border: 1px;
@@ -49,9 +52,35 @@ body {
 .card1{
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
+
 }
+
+.card1-texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titre1 { margin: 0 0 8px; font-size: 36px; }
+.txt1 { color: #334155; line-height: 1.6; margin: 0 0 16px; }
 
 .card1-img img {
     width: 280px; height: auto; display: block;
     border-radius: 12px; border: 1px solid rgba(0,0,0,.08);
 }
+
+.btn1, .btn2 {  /* boutons  */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.btn1 { background: #bff0fb; color: #00313b; border-color: #bff0fb; }
+.btn2 { background: #fff; color: #0f172a; border-color: rgba(0,0,0,.12); }

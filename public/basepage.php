@@ -18,17 +18,21 @@ HTML);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
 <div class="card">
-    <div class="card1-img">
-            <img src="img/MaTronche.png" alt="Photo de Maxence">
-    </div>
-    <div class="card1-texte">
-        <h1 class="titre1">Maxence Pequeno</h1>
-        <p class="txt1">
-            Bonjour ! Je suis Maxence, étudiant en informatique et pianiste. Passionné par le code et baigné dans l’univers de l’industrie depuis petit, je suis curieux, studieux et toujours partant pour apprendre de nouvelles choses.
-        </p>
-        <div class="card1-links">
-            <a class="btn1" href="cv.php">Voir mon CV</a>
-            <a class="btn2" href="https://github.com/MaxencePeq">Projets GitHub</a>
+    <div class="card1">
+        <div class="card1-img">
+                <img src="img/MaTronche.png" alt="Photo de Maxence">
+        </div>
+        <div class="card1-texte">
+            <h1 class="titre1">Maxence Pequeno</h1>
+            <div class="card1-split">
+                <p class="txt1">
+                    Bonjour ! Je suis Maxence, étudiant en informatique et pianiste. Passionné par le code et baigné dans l’univers de l’industrie depuis petit, je suis curieux, studieux et toujours partant pour apprendre de nouvelles choses.
+                </p>
+                <div class="card1-links">
+                    <a class="btn1" href="cv.php">Voir mon CV</a>
+                    <a class="btn2" href="https://github.com/MaxencePeq">Projets GitHub</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
