@@ -13,5 +13,8 @@
             "email": "maxence.pequeno@etudiant.univ-reims.fr"
         }
     ],
+    "scripts": {
+        "start": "bin/run-serveur.sh"
+    },
     "require": {}
 }
