@@ -1,13 +1,28 @@
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(to bottom, deepskyblue, #FFFFFF);
+    background: linear-gradient(to bottom, deepskyblue, #FFFFFF) fixed; /* Pour bloquer le liénar gradient */
+}
+
+/* --------- Card - Templates --*/
+
+.card{
+    background: #fff;
+
+    border: 1px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    padding: 32px;
+    margin-top: 8rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
 /* --------- navbar --*/
 .navbar{
     display: inline-block; /* Pour qu'elle ne prenne pas toute la place ;) */
-    position: sticky;
+    position: fixed;
 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -26,4 +41,17 @@ body {
     justify-content: center;
     border-radius: 10px;
 
+}
+
+
+/* --------- card1  --*/
+
+.card1{
+    display: flex;
+    flex-direction: row;
+}
+
+.card1-img img {
+    width: 280px; height: auto; display: block;
+    border-radius: 12px; border: 1px solid rgba(0,0,0,.08);
 }
