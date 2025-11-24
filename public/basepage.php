@@ -69,7 +69,6 @@ $webpage->appendContent(<<<HTML
 </div>
 HTML); // <- card 3
 
-
 $year = date('Y');
 $webpage->appendContent(<<<HTML
 <footer class="footer">
