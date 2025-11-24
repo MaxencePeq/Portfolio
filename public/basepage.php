@@ -67,7 +67,7 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>
-HTML);
+HTML); // <- card 3
 
 
 $year = date('Y');

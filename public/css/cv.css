@@ -1,0 +1,23 @@
+/* --------- navbar --*/
+.navbar{
+    display: inline-block; /* Pour qu'elle ne prenne pas toute la place ;) */
+    position: fixed;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+
+    top: 0;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+}
+.navbar-item{
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
