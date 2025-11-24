@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, deepskyblue, #FFFFFF) fixed; /* Pour bloquer le liénar gradient */
+}
+
 /* --------- navbar --*/
 .navbar{
     display: inline-block; /* Pour qu'elle ne prenne pas toute la place ;) */
@@ -20,4 +26,22 @@
     justify-content: center;
     border-radius: 10px;
 
+}
+
+/* --------- Card - Templates --*/
+
+.card{
+    display: flex;
+    flex-direction: row;
+
+    background: #fff;
+
+    border: 1px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    padding: 32px;
+    margin-top: 3rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
