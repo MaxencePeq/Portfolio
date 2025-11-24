@@ -1,0 +1,84 @@
+/* Reset rapide */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #0f172a;
+    background: linear-gradient(180deg, #00b6da 0%, #93e1f0 65%, #eaf9fe 100%);
+    background-attachment: fixed;
+}
+
+/* Layout simple */
+.zone0 { position: sticky; top: 0; padding: 8px; }
+.zone1 { max-width: 1100px; margin: 0 auto; padding: 48px 16px; }
+.zone9 { max-width: 1100px; margin: 0 auto 12px; padding: 0 16px; font-size: 12px; color: #334155; }
+
+/* Liens sociaux */
+.z0-links {
+    display: inline-flex; gap: 8px; padding: 6px 10px;
+    background: #fff; border: 1px solid rgba(0,0,0,.08);
+    border-radius: 12px; box-shadow: 0 8px 24px rgba(2,132,199,.12);
+}
+.z0-item { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 10px; }
+
+/* Cartes basiques*/
+.card1 {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 8px 24px rgba(2,132,199,.12);
+    margin-top: 48px;
+}
+
+/* Bloc 1 = hero */
+.bloc1 { display: flex; gap: 24px; align-items: center; }
+.bloc1-img img {
+    width: 280px; height: auto; display: block;
+    border-radius: 12px; border: 1px solid rgba(0,0,0,.08);
+}
+.titre1 { margin: 0 0 8px; font-size: 36px; }
+.txt1 { color: #334155; line-height: 1.6; margin: 0 0 16px; }
+.actions1 { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Boutons très simples */
+.btn1, .btn2 {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 40px; padding: 0 16px; border-radius: 10px; font-weight: 600;
+    text-decoration: none; border: 1px solid transparent; cursor: pointer;
+}
+.btn1 { background: #bff0fb; color: #00313b; border-color: #bff0fb; }
+.btn2 { background: #fff; color: #0f172a; border-color: rgba(0,0,0,.12); }
+
+/* Titres */
+.titre2 { margin: 0 0 12px; font-size: 24px; }
+
+/* Bloc 3 = grille d'icônes */
+.icones1 {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+.icones1 li {
+    display: grid; place-items: center; min-height: 100px;
+    background: #f7fbfd; border: 1px solid rgba(0,0,0,.08); border-radius: 12px;
+}
+.icones1 img { max-width: 72px; max-height: 72px; }s
+
+/* CV page */
+.bloccv { text-align: center; }
+.cv-wrap { margin: 16px auto; }
+.cv-img {
+    width: 100%; max-width: 707px; height: auto; border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.08);
+}
+.cv-actions { margin-top: 12px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+/* Adaptations mobile */
+@media (max-width: 780px) {
+    .bloc1 { flex-direction: column; align-items: stretch; }
+    .bloc1-img img { width: 100%; }
+    .titre1 { font-size: 28px; }
+    .card1 { padding: 24px; }
+}
