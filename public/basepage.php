@@ -30,7 +30,7 @@ $webpage->appendContent(<<<HTML
                     Bonjour ! Je suis Maxence, étudiant en informatique et pianiste. Passionné par le code et baigné dans l’univers de l’industrie depuis petit, je suis curieux, studieux et toujours partant pour apprendre de nouvelles choses.
                 </p>
                 <div class="card1-links">
-                    <a class="btn1" href="cv.php">Voir mon CV</a>
+                    <a class="btn1" href="monCV.php">Voir mon CV</a>
                     <a class="btn2" href="https://github.com/MaxencePeq">Projets GitHub</a>
                 </div>
             </div>
