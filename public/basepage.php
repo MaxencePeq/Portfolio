@@ -49,7 +49,32 @@ $webpage->appendContent(<<<HTML
         <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique en début d’année, puis un petit jeu web Idle/Autoclicker pendant l’été.</p>
     </div>
 </div>
+HTML); // <- Card 2
+
+$webpage->appendContent(<<<HTML
+<div class="card">
+    <div class="card3">
+        <h2 class="titre2">Langages et outils</h2>
+        <ul class="icones1">
+            <li><img src="img/html-5.png" width="96" height="96" alt="HTML5"></li>
+            <li><img src="img/css-3.png" width="96" height="96" alt="CSS3"></li>
+            <li><img src="img/CSHARP.png" width="96" height="96" alt="C#"></li>
+            <li><img src="img/php.png" width="96" height="96" alt="PHP"></li>
+            <li><img src="img/python.png" width="96" height="96" alt="Python"></li>
+            <li><img src="img/serveur-sql.png" width="96" height="96" alt="SQL"></li>
+            <li><img src="img/symfony_black_03.png" width="96" height="96" alt="Symfony"></li>
+            <li><img src="img/git.png" width="96" height="96" alt="Git"></li>
+        </ul>
+    </div>
+</div>
 HTML);
 
+
+$year = date('Y');
+$webpage->appendContent(<<<HTML
+<footer class="footer">
+    <small>© $year Maxence Pequeno — Portfolio</small>
+</footer>
+HTML); // <- Footer
 
 echo($webpage->toHtml());

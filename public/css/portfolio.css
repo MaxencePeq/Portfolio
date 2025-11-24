@@ -64,7 +64,7 @@ body {
     display: grid; place-items: center; min-height: 100px;
     background: #f7fbfd; border: 1px solid rgba(0,0,0,.08); border-radius: 12px;
 }
-.icones1 img { max-width: 72px; max-height: 72px; }s
+.icones1 img { max-width: 72px; max-height: 72px; }
 
 /* CV page */
 .bloccv { text-align: center; }
