@@ -1,0 +1,17 @@
+{
+    "name": "maxence/official-git-hub-portfolio",
+    "description": "This is my portfolio",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Maxence\\OfficialGitHubPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pequeno Maxence",
+            "email": "maxence.pequeno@etudiant.univ-reims.fr"
+        }
+    ],
+    "require": {}
+}
