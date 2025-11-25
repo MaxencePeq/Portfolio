@@ -89,7 +89,11 @@ $webpage->appendContent(<<<HTML
             <img src="img/BakerySim-img/full.png" width="450" height="230" alt="full-webmusic">
             <img src="img/BakerySim-img/debug.png" width="450" height="230" alt="debug-webmusic">
        </div>
-        
+    </div>
+</div>
+
+<div class="card">
+    <div class="card5">
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répértorie des genres / albums / artistes de musiques et créer des liens youtube <br> automatique pour retrouver les musiques.  </p>
         
         <div class="webmusic-img">
