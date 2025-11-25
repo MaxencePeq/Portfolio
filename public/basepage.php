@@ -82,7 +82,7 @@ $webpage->appendContent(<<<HTML
     <div class="card4">
         <h2 class="titre2">Projets personnel </h2>  
         
-        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fais par ia) pour modérer les comptes.  </p>
+        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fais par ia) pour modérer les comptes.  </p>
        
        <div class="BakerySim-img">
             <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator">
