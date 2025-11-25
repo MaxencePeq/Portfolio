@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use Maxence\OfficialGitHubPortfolio\html\WebPage;
 
@@ -22,13 +23,13 @@ $webpage->appendContent(<<<HTML
         <p class="txt1">Aperçu en pleine largeur, avec options de téléchargement et d’impression.</p>
         
         <div class="cv">
-            <img class="cv-img" src="img/CVmaxpeq.png" alt="CV de Maxence Pequeno" width="707" height="1000">
+            <img class="cv-img" src="img/CVmax.png" alt="CV de Maxence Pequeno" width="707" height="1000">
         </div>
         
         <div class="cv-actions">
             <a class="btn1" href="img/CVmaxpeq.png" download>Télécharger</a>
             <button class="btn2" type="button" onclick="window.print()">Imprimer</button>
-            <a class="btn2" href="playpage.php">← Retour</a>
+            <a class="btn2" href="basepage.php">← Retour</a>
         </div>
         
     </div>

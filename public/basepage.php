@@ -1,4 +1,11 @@
 <?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 use Maxence\OfficialGitHubPortfolio\html\WebPage;
 
@@ -64,10 +71,36 @@ $webpage->appendContent(<<<HTML
             <li><img src="img/serveur-sql.png" width="96" height="96" alt="SQL"></li>
             <li><img src="img/symfony_black_03.png" width="96" height="96" alt="Symfony"></li>
             <li><img src="img/git.png" width="96" height="96" alt="Git"></li>
+            <li><img src="img/mysql.png" width="96" height="96" alt="MySql"></li>
         </ul>
     </div>
 </div>
-HTML); // <- card 3
+HTML); // <- card 3 // images
+
+$webpage->appendContent(<<<HTML
+<div class="card">
+    <div class="card4">
+        <h2 class="titre2">Projets personnel </h2>  
+        
+        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fais par ia) pour modérer les comptes.  </p>
+       
+       <div class="BakerySim-img">
+            <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator">
+            <img src="img/BakerySim-img/full.png" width="450" height="230" alt="full-webmusic">
+            <img src="img/BakerySim-img/debug.png" width="450" height="230" alt="debug-webmusic">
+       </div>
+        
+        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répértorie des genres / albums / artistes de musiques et créer des liens youtube <br> automatique pour retrouver les musiques.  </p>
+        
+        <div class="webmusic-img">
+            <img src="img/webmusic-img/index.png" width="367" height="194" alt="index-webmusic">
+            <img src="img/webmusic-img/album.png" width="367" height="194" alt="album-webmusic">
+            <img src="img/webmusic-img/album-track.png" width="367" height="194" alt="albumTrack-webmusic">
+            <img src="img/webmusic-img/song.png" width="367" height="194" alt="song-webmusic">
+        </div>
+    </div>
+</div>
+HTML);
 
 $year = date('Y');
 $webpage->appendContent(<<<HTML

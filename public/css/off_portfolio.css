@@ -118,6 +118,18 @@ body {
 }
 .icones1 img { min-width: 72px; min-height: 72px; }
 
+/* --------- Webmusic + BakerySimulator  --*/
+.webmusic-img, .BakerySim-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+.BakerySim-img{
+    margin-bottom: 2rem;
+}
+
 /* --------- footer --*/
 .footer {
     max-width: 1100px;
