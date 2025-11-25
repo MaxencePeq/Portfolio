@@ -82,7 +82,7 @@ $webpage->appendContent(<<<HTML
     <div class="card4">
         <h2 class="titre2">Projets personnel </h2>  
         
-        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fais par ia) pour modérer les comptes.  </p>
+        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
        
        <div class="BakerySim-img">
             <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator">
@@ -94,7 +94,7 @@ $webpage->appendContent(<<<HTML
 
 <div class="card">
     <div class="card5">
-        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répértorie des genres / albums / artistes de musiques et créer des liens youtube <br> automatique pour retrouver les musiques.  </p>
+        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
         
         <div class="webmusic-img">
             <img src="img/webmusic-img/index.png" width="367" height="194" alt="index-webmusic">
