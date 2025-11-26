@@ -28,7 +28,7 @@ $webpage->appendContent(<<<HTML
 <div class="card">
     <div class="card1">
         <div class="card1-img">
-                <img src="img/MaTronche.png" alt="Photo de Maxence">
+                <img src="img/BANANA.png" alt="Photo de Maxence">
         </div>
         <div class="card1-texte">
             <h1 class="titre1">Maxence Pequeno</h1>
