@@ -168,3 +168,48 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
+/*********** MÉDIA - QUERY ***/
+
+@media (max-width: 1024px) {
+    .card {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    card {
+        margin: 1rem;
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+}
+.JusteHereForMakePlace {
+    margin-top: 6rem;
+}
+
+.card1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+/* La photo ne doit pas dépasser l'écran */
+.card1-img img {
+    width: 100%;
+    max-width: 280px;
+}
+
+.icones1 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.webmusic-img img,
+.BakerySim-img img {
+    width: 100%;    /* L'image prend toute la largeur dispo */
+    height: auto;   /* Garde les proportions */
+    margin-bottom: 10px;
+}
