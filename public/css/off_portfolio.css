@@ -98,12 +98,13 @@ body {
 /* --------- card3  --*/
 
 .icones1 {
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
 
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -120,7 +121,7 @@ body {
 .icones1 img { min-width: 72px; min-height: 72px; }
 
 /* --------- Webmusic + BakerySimulator  --*/
-.webmusic-img, .BakerySim-img{
+.webmusic-img, .BakerySim-img, spaceinvaders-img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -185,31 +186,33 @@ body {
         padding: 1.5rem;
         flex-direction: column;
     }
-}
-.JusteHereForMakePlace {
-    margin-top: 6rem;
-}
 
-.card1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-/* La photo ne doit pas dépasser l'écran */
-.card1-img img {
-    width: 100%;
-    max-width: 280px;
-}
+    .JusteHereForMakePlace {
+        margin-top: 6rem;
+    }
 
-.icones1 {
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .card1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* La photo ne doit pas dépasser l'écran */
+    .card1-img img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .icones1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 
-.webmusic-img img,
-.BakerySim-img img {
-    width: 100%;    /* L'image prend toute la largeur dispo */
-    height: auto;   /* Garde les proportions */
-    margin-bottom: 10px;
+    .webmusic-img img,
+    .BakerySim-img img {
+        width: 100%; /* L'image prend toute la largeur dispo */
+        height: auto; /* Garde les proportions */
+        margin-bottom: 10px;
+    }
 }

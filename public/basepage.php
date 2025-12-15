@@ -66,12 +66,15 @@ $webpage->appendContent(<<<HTML
             <li><img src="img/html-5.png" width="96" height="96" alt="HTML5"></li>
             <li><img src="img/css-3.png" width="96" height="96" alt="CSS3"></li>
             <li><img src="img/CSHARP.png" width="96" height="96" alt="C#"></li>
+            <li><img src="img/Net.jpg" width="96" height="96" alt=".NET"></li>
             <li><img src="img/php.png" width="96" height="96" alt="PHP"></li>
-            <li><img src="img/python.png" width="96" height="96" alt="Python"></li>
+            <li><img src="img/COMPOSER.png" width="96" height="96" alt="Composer"></li>
+            <li><img src="img/symfony-icon.png" width="96" height="96" alt="Symfony"></li>
             <li><img src="img/serveur-sql.png" width="96" height="96" alt="SQL"></li>
-            <li><img src="img/symfony_black_03.png" width="96" height="96" alt="Symfony"></li>
-            <li><img src="img/git.png" width="96" height="96" alt="Git"></li>
             <li><img src="img/mysql.png" width="96" height="96" alt="MySql"></li>
+            <li><img src="img/git.png" width="96" height="96" alt="Git"></li>
+            <li><img src="img/js.png" width="96" height="96" alt="Javascript"></li>
+            <li><img src="img/python.png" width="96" height="96" alt="Python"></li>
         </ul>
     </div>
 </div>
@@ -101,6 +104,17 @@ $webpage->appendContent(<<<HTML
             <img src="img/webmusic-img/album.png" width="367" height="194" alt="album-webmusic">
             <img src="img/webmusic-img/album-track.png" width="367" height="194" alt="albumTrack-webmusic">
             <img src="img/webmusic-img/song.png" width="367" height="194" alt="song-webmusic">
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card6">
+        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callback ! <br></p>
+        
+        <div class="spaceinvaders-img">
+            <img src="img/SpaceInvader-img/tir.png" width="367" height="194" alt="tir-SpaceInvader">
+            <img src="img/SpaceInvader-img/GameOVer.png" width="367" height="194" alt="gameover-SpaceInvader">
+            <img src="img/SpaceInvader-img/Bonus.png" width="367" height="194" alt="Bonus-SpaceInvader">
         </div>
     </div>
 </div>

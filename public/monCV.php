@@ -23,11 +23,11 @@ $webpage->appendContent(<<<HTML
         <p class="txt1">Aperçu en pleine largeur, avec options de téléchargement et d’impression.</p>
         
         <div class="cv">
-            <img class="cv-img" src="img/newCV.jpg" alt="CV de Maxence Pequeno" width="707" height="1000">
+            <img class="cv-img" src="img/cv.png" alt="CV de Maxence Pequeno" width="707" height="1000">
         </div>
         
         <div class="cv-actions">
-            <a class="btn1" href="img/CVmaxpeq.png" download>Télécharger</a>
+            <a class="btn1" href="img/cv.png" download>Télécharger</a>
             <button class="btn2" type="button" onclick="window.print()">Imprimer</button>
             <a class="btn2" href="basepage.php">← Retour</a>
         </div>
