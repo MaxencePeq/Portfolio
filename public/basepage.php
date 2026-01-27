@@ -31,10 +31,25 @@ $webpage->appendContent(<<<HTML
                 <img src="img/BANANA.png" alt="Photo de Maxence">
         </div>
         <div class="card1-texte">
-            <h1 class="titre1">Maxence Pequeno</h1>
+            <h1 class="titre1">Maxence Pequeno (Étudiant) </h1>
             <div class="card1-split">
                 <p class="txt1">
-                    Bonjour ! Je suis Maxence, étudiant en informatique et pianiste. Passionné par le code et baigné dans l’univers de l’industrie depuis petit, je suis curieux, studieux et toujours partant pour apprendre de nouvelles choses.
+                    <div class="laravelsymfony">
+                        <div class="parent">
+                            <div class="div1">
+                                <img src="img/logoIndex/laravel.png" alt="Laravel">
+                            </div>
+                            <div class="div2">
+                                <img src="img/logoIndex/react.png.webp" alt="React">
+                            </div>
+                            <div class="div3">
+                                <img src="img/logoIndex/symfony.png" alt="Symfony">
+                            </div>
+                            <div class="div4">
+                                <img src="img/logoIndex/API.png" alt="API">
+                            </div>
+                        </div>
+                    </div>
                 </p>
                 <div class="card1-links">
                     <a class="btn1" href="monCV.php">Voir mon CV</a>
@@ -46,6 +61,12 @@ $webpage->appendContent(<<<HTML
 </div>
 
 HTML); // <- Card 1
+
+/*
+ * Bonjour ! Je suis Maxence, étudiant en informatique et pianiste.
+ * Passionné par le code et baigné dans l’univers de l’industrie depuis petit,
+ * je suis curieux, studieux et toujours partant pour apprendre de nouvelles choses.
+ * */
 
 $webpage->appendContent(<<<HTML
 <div class="card">
@@ -94,7 +115,17 @@ $webpage->appendContent(<<<HTML
        </div>
     </div>
 </div>
-
+<div class="card">
+    <div class="card6">
+        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br></p>
+        
+        <div class="spaceinvaders-img">
+            <img src="img/SpaceInvader-img/tir.png" width="367" height="194" alt="tir-SpaceInvader">
+            <img src="img/SpaceInvader-img/GameOVer.png" width="367" height="194" alt="gameover-SpaceInvader">
+            <img src="img/SpaceInvader-img/Bonus.png" width="367" height="194" alt="Bonus-SpaceInvader">
+        </div>
+    </div>
+</div>
 <div class="card">
     <div class="card5">
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
@@ -104,17 +135,6 @@ $webpage->appendContent(<<<HTML
             <img src="img/webmusic-img/album.png" width="367" height="194" alt="album-webmusic">
             <img src="img/webmusic-img/album-track.png" width="367" height="194" alt="albumTrack-webmusic">
             <img src="img/webmusic-img/song.png" width="367" height="194" alt="song-webmusic">
-        </div>
-    </div>
-</div>
-<div class="card">
-    <div class="card6">
-        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callback ! <br></p>
-        
-        <div class="spaceinvaders-img">
-            <img src="img/SpaceInvader-img/tir.png" width="367" height="194" alt="tir-SpaceInvader">
-            <img src="img/SpaceInvader-img/GameOVer.png" width="367" height="194" alt="gameover-SpaceInvader">
-            <img src="img/SpaceInvader-img/Bonus.png" width="367" height="194" alt="Bonus-SpaceInvader">
         </div>
     </div>
 </div>

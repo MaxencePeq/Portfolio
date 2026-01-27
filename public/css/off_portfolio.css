@@ -58,6 +58,46 @@ body {
     gap: 1.5rem;
 
 }
+/* --------- Logos Framework Grid  --*/
+.laravelsymfony {
+    margin-top: 1.5rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.parent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: #f7fbfd;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.08);
+    min-height: 80px;
+}
+
+.parent img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limite la taille max */
+    object-fit: contain; /* Garde les proportions */
+}
+
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+        gap: 0.75rem;
+    }
+
+    .parent img {
+        max-width: 120px;
+    }
+}
 
 .card1-texte{
     display: flex;
@@ -70,7 +110,7 @@ body {
 .txt1 { color: #334155; line-height: 1.6; margin: 0 0 4px; }
 
 .card1-img img {
-    width: 280px; height: auto; display: block;
+    width: 350px; height: auto; display: block;
     border-radius: 12px; border: 1px solid rgba(0,0,0,.08);
 }
 
@@ -173,7 +213,7 @@ body {
 
 /*********** MÉDIA - QUERY ***/
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .card {
         margin-left: 2rem;
         margin-right: 2rem;
