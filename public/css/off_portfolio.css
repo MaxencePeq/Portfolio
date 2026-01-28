@@ -21,9 +21,9 @@ body {
 
     padding: 32px;
     margin: 3rem auto;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    width: 100%;
     max-width: 1100px;
+    box-sizing: border-box;
 
     transition: box-shadow 0.3s ease;
 }
@@ -46,8 +46,10 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 8px;
-    margin: 10px;
+    margin-top: 10px;
     background-color: white;
     z-index: 1000;
 }
@@ -114,6 +116,12 @@ body {
     flex-direction: row;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card1-img {
+    flex-shrink: 0;
 }
 
 .card1-img img {
@@ -129,19 +137,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex: 1;
+    max-width: 600px;
 }
 
 .card1-split {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 1rem;
+    width: 100%;
+    align-items: center;
 }
 
-/* Logos Framework Grid */
+.card1-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+/* ========== LOGOS FRAMEWORK GRID ========== */
 .laravelsymfony {
-    margin-top: 0;
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .parent {
@@ -149,6 +170,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     align-items: center;
+    width: 100%;
+    max-width: 450px;
 }
 
 .parent > div {
@@ -159,42 +182,35 @@ body {
     background: #f7fbfd;
     border-radius: 12px;
     border: 1px solid rgba(0,0,0,.08);
-    min-height: 80px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 100px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .parent > div:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,102,204,0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .parent img {
     width: 100%;
     height: auto;
-    max-width: 120px;
+    max-width: 90px;
     object-fit: contain;
 }
 
-/* Boutons */
-.card1-links {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
+/* ========== BOUTONS ========== */
 .btn1, .btn2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 44px;
-    padding: 0 20px;
+    height: 40px;
+    padding: 0 16px;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 15px;
     text-decoration: none;
     border: 1px solid transparent;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn1 {
@@ -203,64 +219,51 @@ body {
     border-color: #bff0fb;
 }
 
-.btn1:hover {
-    background: #9de8f7;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,49,59,0.2);
-}
-
 .btn2 {
     background: #fff;
     color: #0f172a;
     border-color: rgba(0,0,0,.12);
 }
 
-.btn2:hover {
-    background: #f8fafc;
-    border-color: rgba(0,0,0,.2);
+.btn1:hover, .btn2:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* ========== CARD 2 (Parcours) ========== */
 .card2 {
-    font-size: 16px;
+    width: 100%;
 }
 
-.card2 .txt1 {
-    margin-bottom: 1rem;
-}
-
-/* ========== CARD 3 (Langages) ========== */
+/* ========== CARD 3 (Langages et outils) ========== */
 .card3 {
     width: 100%;
 }
 
 .icones1 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 1rem;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .icones1 li {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 110px;
     padding: 1rem;
-
     background: #f7fbfd;
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 12px;
-
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .icones1 li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,102,204,0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 .icones1 img {
@@ -269,66 +272,58 @@ body {
     object-fit: contain;
 }
 
-/* ========== PROJETS (Cards 4, 5, 6) ========== */
+/* ========== CARDS PROJETS ========== */
 .card4, .card5, .card6 {
     width: 100%;
 }
 
-.webmusic-img,
-.BakerySim-img,
-.spaceinvaders-img {
+.webmusic-img, .BakerySim-img, .spaceinvaders-img {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 10px;
+    gap: 1rem;
     margin-top: 1.5rem;
 }
 
 .webmusic-img img,
 .BakerySim-img img,
 .spaceinvaders-img img {
-    max-width: 100%;
-    height: auto;
     border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.08);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    will-change: transform;
 }
 
 .webmusic-img img:hover,
 .BakerySim-img img:hover,
 .spaceinvaders-img img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-}
-
-.BakerySim-img {
-    margin-bottom: 1rem;
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
 /* ========== FOOTER ========== */
 .footer {
     max-width: 1100px;
-    margin: 4rem auto 2rem;
-    padding: 1.5rem 16px;
+    margin: 3rem auto 2rem;
+    padding: 0 16px;
+    font-size: 12px;
+    color: #334155;
     text-align: center;
-    font-size: 14px;
-    color: #64748b;
-    border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 /* ========== CV PAGE ========== */
-.card-body p,
-.card-body h1 {
+.card-body {
+    width: 100%;
+}
+
+.card-body p, .card-body h1 {
     text-align: center;
 }
 
 .bloccv {
     text-align: center;
-}
-
-.card-body {
-    margin: 16px auto;
 }
 
 .cv-img {
@@ -337,7 +332,6 @@ body {
     height: auto;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,.08);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .cv-actions {
@@ -348,20 +342,17 @@ body {
     flex-wrap: wrap;
 }
 
-/* ========== MÉDIA QUERIES ========== */
-
-/* Tablettes et petits écrans */
+/* ========== MEDIA QUERIES ========== */
 @media (max-width: 1200px) {
     .card {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .card {
-        margin: 2rem 1rem;
+        margin: 3rem 1rem;
         padding: 1.5rem;
     }
 
@@ -369,14 +360,6 @@ body {
         margin-top: 6rem;
     }
 
-    .navbar {
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 10px 0;
-    }
-
-    /* Card 1 responsive */
     .card1 {
         flex-direction: column;
         align-items: center;
@@ -394,6 +377,12 @@ body {
 
     .card1-links {
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
     }
 
     .titre1 {
@@ -404,20 +393,19 @@ body {
         font-size: 24px;
     }
 
-    /* Grid logos responsive */
     .parent {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
+        max-width: 100%;
     }
 
     .parent img {
-        max-width: 100px;
+        max-width: 60px;
     }
 
-    /* Icônes langages responsive */
     .icones1 {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 0.75rem;
     }
 
     .icones1 li {
@@ -426,30 +414,22 @@ body {
     }
 
     .icones1 img {
-        width: 60px;
-        height: 60px;
-    }
-
-    /* Images projets responsive */
-    .webmusic-img,
-    .BakerySim-img,
-    .spaceinvaders-img {
-        flex-direction: column;
-        align-items: center;
+        width: 56px;
+        height: 56px;
     }
 
     .webmusic-img img,
     .BakerySim-img img,
     .spaceinvaders-img img {
         width: 100%;
-        max-width: 450px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Très petits écrans */
 @media (max-width: 480px) {
     .card {
-        margin: 1rem 0.5rem;
+        margin: 2rem 0.5rem;
         padding: 1rem;
     }
 
@@ -468,8 +448,7 @@ body {
         height: 32px;
     }
 
-    .btn1, .btn2 {
-        width: 100%;
-        justify-content: center;
+    .parent {
+        grid-template-columns: 1fr;
     }
 }

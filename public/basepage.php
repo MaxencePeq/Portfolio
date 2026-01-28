@@ -75,7 +75,7 @@ HTML); // <- Card 1
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
+     data-aos-duration="1000" class="card">
     <div class="card2">
         <h2 class="titre2">Parcours</h2>
         <p class="txt1">Diplômé d’un baccalauréat général avec spécialités Sciences Numériques et Mathématiques. (Lycée Franklin Roosevelt, Reims — 2024) </p>
@@ -87,7 +87,7 @@ HTML); // <- Card 2
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
+     data-aos-duration="1000" class="card">
     <div class="card3">
         <h2 class="titre2">Langages et outils</h2>
         <ul class="icones1">
@@ -110,11 +110,11 @@ HTML); // <- card 3 // images
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
+     data-aos-duration="1000" class="card">
     <div class="card4">
         <h2 class="titre2">Projets personnels </h2> 
         
-        <p class="txt1"> (2025) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a><br></p>
+        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> (Photo cliquable)<br></p>
         
         <div class="spaceinvaders-img">
         <a href="https://lebelouvrage.bzh/">
@@ -131,9 +131,27 @@ $webpage->appendContent(<<<HTML
         </a>
         </div>
     </div>
+</div>    
+<div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
+    <div class="card6">
+        <p class="txt1"> (2026) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Buddy System</a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
+        Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
+        
+        <div class="spaceinvaders-img">
+            <img src="img/buddysystem/accueil.png" width="367" height="194" alt="accueil-buddysystem">
+            <img src="img/buddysystem/chat.png" width="367" height="194" alt="chat-buddysystem">
+            <img src="img/buddysystem/login.png" width="367" height="194" alt="login-buddysystem">
+            <img src="img/buddysystem/etudiant.png" width="367" " height="194" alt="etudiant-buddysystem">
+            <img src="img/buddysystem/profile.png" width="367" height="194" alt="profile-buddysystem">
+            <img src="img/buddysystem/famille.png" width="367" height="194" alt="famille-buddysystem">
+        </div>
+    </div>
+</div>
+    
 </div> 
         <div data-aos="fade-up"
-         data-aos-duration="3000" class="card">
+         data-aos-duration="1000" class="card">
             <div class="card4">
                 <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
                
@@ -146,7 +164,7 @@ $webpage->appendContent(<<<HTML
     </div>
 </div>
 <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
+     data-aos-duration="1000" class="card">
     <div class="card6">
         <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br></p>
         
@@ -158,7 +176,7 @@ $webpage->appendContent(<<<HTML
     </div>
 </div>
 <div data-aos="fade-up"
-     data-aos-duration="3000" class="card">
+     data-aos-duration="1000" class="card">
     <div class="card5">
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
         
