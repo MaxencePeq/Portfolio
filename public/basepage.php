@@ -73,20 +73,14 @@ $webpage->appendContent(<<<HTML
 
 HTML); // <- Card 1
 
-/*
- * Bonjour ! Je suis Maxence, étudiant en informatique et pianiste.
- * Passionné par le code et baigné dans l’univers de l’industrie depuis petit,
- * je suis curieux, studieux et toujours partant pour apprendre de nouvelles choses.
- * */
-
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="3000" class="card">
     <div class="card2">
         <h2 class="titre2">Parcours</h2>
-        <p class="txt1">Diplômé d’un baccalauréat général (Lycée Franklin Roosevelt, Reims — 2024) avec spécialités NSI et Mathématiques.</p>
+        <p class="txt1">Diplômé d’un baccalauréat général avec spécialités Sciences Numériques et Mathématiques. (Lycée Franklin Roosevelt, Reims — 2024) </p>
         <p class="txt1">Actuellement en 2<sup>e</sup> année d’IUT Informatique à Reims (spécialisation développement C#).</p>
-        <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique en début d’année, puis un petit jeu web Idle/Autoclicker pendant l’été.</p>
+        <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique, puis un petit jeu web Idle/Autoclicker pendant l’été. Suivis d'un projet académique de réseau social étudiant et un site vitrine pour un artisant.</p>
     </div>
 </div>
 HTML); // <- Card 2
@@ -118,15 +112,37 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="3000" class="card">
     <div class="card4">
-        <h2 class="titre2">Projets personnel </h2>  
+        <h2 class="titre2">Projets personnels </h2> 
         
-        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
-       
-       <div class="BakerySim-img">
-            <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator">
-            <img src="img/BakerySim-img/full.png" width="450" height="230" alt="full-webmusic">
-            <img src="img/BakerySim-img/debug.png" width="450" height="230" alt="debug-webmusic">
-       </div>
+        <p class="txt1"> (2025) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a><br></p>
+        
+        <div class="spaceinvaders-img">
+        <a href="https://lebelouvrage.bzh/">
+            <img src="img/LebelOuvrage/accueil.png" width="367" height="194" alt="accueil-lebelouvrage">
+        </a>
+        <a href="https://lebelouvrage.bzh/portails/et/clotures">
+            <img src="img/LebelOuvrage/1.png" width="367" height="194" alt="portailcloture-lebelouvrage">
+        </a>
+        <a href="https://lebelouvrage.bzh/#zone-apropos">
+            <img src="img/LebelOuvrage/2.png" width="367" height="194" alt="footer-lebelouvrage">
+        </a>
+        <a href="https://lebelouvrage.bzh/realisations">
+            <img src="img/LebelOuvrage/3.png" width="367" height="194" alt="réalisation-lebelouvrage">
+        </a>
+        </div>
+    </div>
+</div> 
+        <div data-aos="fade-up"
+         data-aos-duration="3000" class="card">
+            <div class="card4">
+                <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
+               
+               <div class="BakerySim-img">
+                    <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator">
+                    <img src="img/BakerySim-img/full.png" width="450" height="230" alt="full-webmusic">
+                    <img src="img/BakerySim-img/debug.png" width="450" height="230" alt="debug-webmusic">
+               </div>
+               
     </div>
 </div>
 <div data-aos="fade-up"
@@ -154,7 +170,7 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
 </div>
-HTML);
+HTML); // <- Projet perso
 
 $year = date('Y');
 $webpage->appendContent(<<<HTML
