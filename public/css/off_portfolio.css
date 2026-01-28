@@ -1,66 +1,147 @@
+/* ========== BASE ========== */
 body {
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom, deepskyblue, #FFFFFF) fixed; /* Pour bloquer le liénar gradient */
+    min-height: 100vh;
+    background: linear-gradient(to bottom, deepskyblue, #FFFFFF) fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* --------- Card - Templates --*/
-
-.card{
+/* ========== CARD - TEMPLATES ========== */
+.card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     background: #fff;
 
-    border: 1px;
+    border: 1px solid rgba(0,0,0,0.08);
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
     padding: 32px;
-    margin-top: 3rem;
-    margin-right: 10rem;
+    margin: 3rem auto;
     margin-left: 10rem;
+    margin-right: 10rem;
+    max-width: 1100px;
+
+    transition: box-shadow 0.3s ease;
 }
-.JusteHereForMakePlace{
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.JusteHereForMakePlace {
     margin-top: 10rem;
 }
 
-/* --------- navbar --*/
-.navbar{
-    display: inline-block; /* Pour qu'elle ne prenne pas toute la place ;) */
+/* ========== NAVBAR ========== */
+.navbar {
+    display: inline-flex;
+    gap: 0.5rem;
     position: fixed;
 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
-
     top: 0;
-    padding: 5px;
+    padding: 8px;
     margin: 10px;
     background-color: white;
+    z-index: 1000;
 }
-.navbar-item{
+
+.navbar-item {
     display: inline-flex;
     width: 44px;
     height: 44px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-
+    transition: background-color 0.2s, transform 0.2s;
 }
 
+.navbar-item:hover {
+    background-color: #f0f9ff;
+    transform: scale(1.1);
+}
 
-/* --------- card1  --*/
+/* ========== TYPOGRAPHIE ========== */
+.titre1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0f172a;
+}
 
-.card1{
+.titre2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    border-left: 4px solid #0066cc;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.txt1 {
+    color: #334155;
+    line-height: 1.7;
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.txt1 strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.txt1 a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.txt1 a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+/* ========== CARD 1 ========== */
+.card1 {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
-
+    gap: 2rem;
+    align-items: center;
 }
-/* --------- Logos Framework Grid  --*/
+
+.card1-img img {
+    width: 350px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card1-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.card1-split {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Logos Framework Grid */
 .laravelsymfony {
-    margin-top: 1.5rem;
+    margin-top: 0;
 }
 
 .parent {
@@ -74,134 +155,191 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
     background: #f7fbfd;
     border-radius: 12px;
     border: 1px solid rgba(0,0,0,.08);
     min-height: 80px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.parent > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,102,204,0.15);
 }
 
 .parent img {
     width: 100%;
     height: auto;
-    max-width: 150px; /* Limite la taille max */
-    object-fit: contain; /* Garde les proportions */
+    max-width: 120px;
+    object-fit: contain;
 }
 
-@media (max-width: 768px) {
-    .parent {
-        grid-template-columns: 1fr; /* 1 colonne sur mobile */
-        gap: 0.75rem;
-    }
-
-    .parent img {
-        max-width: 120px;
-    }
-}
-
-.card1-texte{
+/* Boutons */
+.card1-links {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 18px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-.titre1 { margin: 0 0 8px; font-size: 36px; }
-.txt1 { color: #334155; line-height: 1.6; margin: 0 0 4px; }
-
-.card1-img img {
-    width: 350px; height: auto; display: block;
-    border-radius: 12px; border: 1px solid rgba(0,0,0,.08);
-}
-
-.btn1, .btn2 {  /* boutons  */
+.btn1, .btn2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    padding: 0 16px;
+    height: 44px;
+    padding: 0 20px;
     border-radius: 10px;
     font-weight: 600;
+    font-size: 15px;
     text-decoration: none;
     border: 1px solid transparent;
     cursor: pointer;
-}
-.btn1 { background: #bff0fb; color: #00313b; border-color: #bff0fb; }
-.btn2 { background: #fff; color: #0f172a; border-color: rgba(0,0,0,.12); }
-
-/* --------- card2  --*/
-
-.card2{
-    font-size: 18px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
-/* --------- card3  --*/
+.btn1 {
+    background: #bff0fb;
+    color: #00313b;
+    border-color: #bff0fb;
+}
+
+.btn1:hover {
+    background: #9de8f7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,49,59,0.2);
+}
+
+.btn2 {
+    background: #fff;
+    color: #0f172a;
+    border-color: rgba(0,0,0,.12);
+}
+
+.btn2:hover {
+    background: #f8fafc;
+    border-color: rgba(0,0,0,.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ========== CARD 2 (Parcours) ========== */
+.card2 {
+    font-size: 16px;
+}
+
+.card2 .txt1 {
+    margin-bottom: 1rem;
+}
+
+/* ========== CARD 3 (Langages) ========== */
+.card3 {
+    width: 100%;
+}
 
 .icones1 {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
 }
-
 
 .icones1 li {
     display: grid;
     place-items: center;
-    min-height: 100px;
+    min-height: 110px;
+    padding: 1rem;
 
     background: #f7fbfd;
-    border: 0px solid rgba(0,0,0,.08);
+    border: 1px solid rgba(0,0,0,.08);
     border-radius: 12px;
-}
-.icones1 img { min-width: 72px; min-height: 72px; }
 
-/* --------- Webmusic + BakerySimulator + Space invaders  --*/
-.webmusic-img, .BakerySim-img, .spaceinvaders-img{
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icones1 li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,102,204,0.15);
+}
+
+.icones1 img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+/* ========== PROJETS (Cards 4, 5, 6) ========== */
+.card4, .card5, .card6 {
+    width: 100%;
+}
+
+.webmusic-img,
+.BakerySim-img,
+.spaceinvaders-img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     padding: 10px;
-}
-.BakerySim-img{
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
 }
 
-/* --------- footer --*/
+.webmusic-img img,
+.BakerySim-img img,
+.spaceinvaders-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.webmusic-img img:hover,
+.BakerySim-img img:hover,
+.spaceinvaders-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.BakerySim-img {
+    margin-bottom: 1rem;
+}
+
+/* ========== FOOTER ========== */
 .footer {
     max-width: 1100px;
-    margin: 0 auto 12px;
-    padding: 0 16px;
-    font-size: 12px;
-    color: #334155;
-    margin-top: 3rem;
+    margin: 4rem auto 2rem;
+    padding: 1.5rem 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+    border-top: 1px solid rgba(0,0,0,0.08);
 }
 
-
-/* --------- CV BODY --*/
-
-.card-body p,.card-body h1{
+/* ========== CV PAGE ========== */
+.card-body p,
+.card-body h1 {
     text-align: center;
 }
 
 .bloccv {
     text-align: center;
 }
+
 .card-body {
     margin: 16px auto;
 }
+
 .cv-img {
     width: 100%;
     max-width: 707px;
     height: auto;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 .cv-actions {
     margin-top: 12px;
     display: flex;
@@ -210,50 +348,128 @@ body {
     flex-wrap: wrap;
 }
 
+/* ========== MÉDIA QUERIES ========== */
 
-/*********** MÉDIA - QUERY ***/
-
+/* Tablettes et petits écrans */
 @media (max-width: 1200px) {
     .card {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-    card {
-        margin: 1rem;
+    .card {
+        margin: 2rem 1rem;
         padding: 1.5rem;
-        flex-direction: column;
     }
 
     .JusteHereForMakePlace {
         margin-top: 6rem;
     }
 
+    .navbar {
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 10px 0;
+    }
+
+    /* Card 1 responsive */
     .card1 {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
-    /* La photo ne doit pas dépasser l'écran */
     .card1-img img {
         width: 100%;
         max-width: 280px;
     }
 
-    .icones1 {
-        flex-wrap: wrap;
+    .card1-texte {
+        text-align: center;
+    }
+
+    .card1-links {
         justify-content: center;
     }
 
+    .titre1 {
+        font-size: 28px;
+    }
+
+    .titre2 {
+        font-size: 24px;
+    }
+
+    /* Grid logos responsive */
+    .parent {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .parent img {
+        max-width: 100px;
+    }
+
+    /* Icônes langages responsive */
+    .icones1 {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 1rem;
+    }
+
+    .icones1 li {
+        min-height: 90px;
+        padding: 0.75rem;
+    }
+
+    .icones1 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Images projets responsive */
+    .webmusic-img,
+    .BakerySim-img,
+    .spaceinvaders-img {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .webmusic-img img,
     .BakerySim-img img,
     .spaceinvaders-img img {
-        width: 100%; /* L'image prend toute la largeur dispo */
-        height: auto; /* Garde les proportions */
-        margin-bottom: 10px;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+    .card {
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+    }
+
+    .navbar {
+        padding: 6px;
+        gap: 0.25rem;
+    }
+
+    .navbar-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-item img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+        justify-content: center;
     }
 }
