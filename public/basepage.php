@@ -13,6 +13,9 @@ $webpage = new WebPage();
 $webpage->setTitle("Maxence Portfolio");
 
 $webpage->appendCssUrl("css/off_portfolio.css");
+$webpage->appendToHead(<<<HTML
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+HTML);
 
 $webpage->appendContent(<<<HTML
 <nav class="navbar">
@@ -26,7 +29,7 @@ HTML);  // <- Nav-bar
 $webpage->appendContent(<<<HTML
 <div class="JusteHereForMakePlace"></div>
 <div class="card">
-    <div class="card1">
+    <div data-aos="flip-left" class="card1">
         <div class="card1-img">
                 <img src="img/BANANA.png" alt="Photo de Maxence">
         </div>
@@ -69,7 +72,8 @@ HTML); // <- Card 1
  * */
 
 $webpage->appendContent(<<<HTML
-<div class="card">
+<div data-aos="fade-up"
+     data-aos-duration="3000" class="card">
     <div class="card2">
         <h2 class="titre2">Parcours</h2>
         <p class="txt1">Diplômé d’un baccalauréat général (Lycée Franklin Roosevelt, Reims — 2024) avec spécialités NSI et Mathématiques.</p>
@@ -80,7 +84,8 @@ $webpage->appendContent(<<<HTML
 HTML); // <- Card 2
 
 $webpage->appendContent(<<<HTML
-<div class="card">
+<div data-aos="fade-up"
+     data-aos-duration="3000" class="card">
     <div class="card3">
         <h2 class="titre2">Langages et outils</h2>
         <ul class="icones1">
@@ -102,7 +107,8 @@ $webpage->appendContent(<<<HTML
 HTML); // <- card 3 // images
 
 $webpage->appendContent(<<<HTML
-<div class="card">
+<div data-aos="fade-up"
+     data-aos-duration="3000" class="card">
     <div class="card4">
         <h2 class="titre2">Projets personnel </h2>  
         
@@ -115,7 +121,8 @@ $webpage->appendContent(<<<HTML
        </div>
     </div>
 </div>
-<div class="card">
+<div data-aos="fade-up"
+     data-aos-duration="3000" class="card">
     <div class="card6">
         <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br></p>
         
@@ -126,7 +133,8 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
 </div>
-<div class="card">
+<div data-aos="fade-up"
+     data-aos-duration="3000" class="card">
     <div class="card5">
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
         
@@ -145,6 +153,11 @@ $webpage->appendContent(<<<HTML
 <footer class="footer">
     <small>© $year Maxence Pequeno — Portfolio</small>
 </footer>
-HTML); // <- Footer
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+HTML); // <- Footer + SCRIPT AOS
 
 echo($webpage->toHtml());
