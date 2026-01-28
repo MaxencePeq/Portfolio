@@ -40,16 +40,24 @@ $webpage->appendContent(<<<HTML
                     <div class="laravelsymfony">
                         <div class="parent">
                             <div class="div1">
-                                <img src="img/logoIndex/laravel.png" alt="Laravel">
+                                <a href="https://laravel.com/">
+                                    <img src="img/logoIndex/laravel.png" alt="Laravel">
+                                </a>
                             </div>
                             <div class="div2">
-                                <img src="img/logoIndex/react.png.webp" alt="React">
+                                <a href="https://fr.react.dev/">
+                                    <img src="img/logoIndex/react.png.webp" alt="React">
+                                </a>
                             </div>
                             <div class="div3">
-                                <img src="img/logoIndex/symfony.png" alt="Symfony">
+                                <a href="https://symfony.com/"">
+                                    <img src="img/logoIndex/symfony.png" alt="Symfony">
+                                 </a>
                             </div>
                             <div class="div4">
-                                <img src="img/logoIndex/API.png" alt="API">
+                                <a href="https://api-platform.com/">
+                                    <img src="img/logoIndex/API.png" alt="API">
+                                 </a>
                             </div>
                         </div>
                     </div>
