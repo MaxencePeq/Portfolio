@@ -117,26 +117,7 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> (Photo cliquable)<br></p>
         
         <div class="spaceinvaders-img">
-        <a href="https://lebelouvrage.bzh/">
-            <img src="img/LebelOuvrage/accueil.png" width="367" height="194" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrir()">
-        </a>
-        
-        <div id="carrousel" class="carrousel">
-            <span class="fermer" onclick="fermer()">×</span>
-            <button class="fleche" onclick="precedent()">←</button>
-            <img id="image" src="image1.jpg" alt="Photo">
-            <button class="fleche" onclick="suivant()">→</button>
-        </div>
-        
-        <a href="https://lebelouvrage.bzh/portails/et/clotures">
-            <img src="img/LebelOuvrage/1.png" width="367" height="194" alt="portailcloture-lebelouvrage">
-        </a>
-        <a href="https://lebelouvrage.bzh/#zone-apropos">
-            <img src="img/LebelOuvrage/2.png" width="367" height="194" alt="footer-lebelouvrage">
-        </a>
-        <a href="https://lebelouvrage.bzh/realisations">
-            <img src="img/LebelOuvrage/3.png" width="367" height="194" alt="réalisation-lebelouvrage">
-        </a>
+            <img src="img/LebelOuvrage/accueil.png" width="367" height="194" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
         </div>
     </div>
 </div>    
@@ -147,12 +128,7 @@ $webpage->appendContent(<<<HTML
         Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
         
         <div class="spaceinvaders-img">
-            <img src="img/buddysystem/accueil.png" width="367" height="194" alt="accueil-buddysystem">
-            <img src="img/buddysystem/chat.png" width="367" height="194" alt="chat-buddysystem">
-            <img src="img/buddysystem/login.png" width="367" height="194" alt="login-buddysystem">
-            <img src="img/buddysystem/etudiant.png" width="367" " height="194" alt="etudiant-buddysystem">
-            <img src="img/buddysystem/profile.png" width="367" height="194" alt="profile-buddysystem">
-            <img src="img/buddysystem/famille.png" width="367" height="194" alt="famille-buddysystem">
+            <img src="img/buddysystem/accueil.png" width="367" height="194" alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
         </div>
     </div>
 </div>
@@ -164,9 +140,7 @@ $webpage->appendContent(<<<HTML
                 <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
                
                <div class="BakerySim-img">
-                    <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator">
-                    <img src="img/BakerySim-img/full.png" width="450" height="230" alt="full-webmusic">
-                    <img src="img/BakerySim-img/debug.png" width="450" height="230" alt="debug-webmusic">
+                    <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
                </div>
                
     </div>
@@ -189,12 +163,16 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
         
         <div class="webmusic-img">
-            <img src="img/webmusic-img/index.png" width="367" height="194" alt="index-webmusic">
-            <img src="img/webmusic-img/album.png" width="367" height="194" alt="album-webmusic">
-            <img src="img/webmusic-img/album-track.png" width="367" height="194" alt="albumTrack-webmusic">
-            <img src="img/webmusic-img/song.png" width="367" height="194" alt="song-webmusic">
+            <img src="img/webmusic-img/index.png" width="367" height="194" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
         </div>
     </div>
+</div>
+
+<div id="carrousel" class="carrousel">
+    <span class="fermer" onclick="fermer()">×</span>
+    <button class="fleche" onclick="precedent()">←</button>
+    <img id="image" src="image1.jpg" alt="Photo">
+    <button class="fleche" onclick="suivant()">→</button>
 </div>
 HTML); // <- Projet perso
 
