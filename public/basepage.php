@@ -205,10 +205,11 @@ $webpage->appendContent(<<<HTML
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="script.js"></script>
+<script src="script/carrousel.js"></script>
 <script>
   AOS.init();
 </script>
-HTML); // <- Footer + SCRIPT (AOS, JS)
+HTML
+); // <- Footer + SCRIPT (AOS, JS)
 
 echo($webpage->toHtml());
