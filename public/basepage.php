@@ -118,8 +118,16 @@ $webpage->appendContent(<<<HTML
         
         <div class="spaceinvaders-img">
         <a href="https://lebelouvrage.bzh/">
-            <img src="img/LebelOuvrage/accueil.png" width="367" height="194" alt="accueil-lebelouvrage">
+            <img src="img/LebelOuvrage/accueil.png" width="367" height="194" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrir()">
         </a>
+        
+        <div id="carrousel" class="carrousel">
+            <span class="fermer" onclick="fermer()">×</span>
+            <button class="fleche" onclick="precedent()">←</button>
+            <img id="image" src="image1.jpg" alt="Photo">
+            <button class="fleche" onclick="suivant()">→</button>
+        </div>
+        
         <a href="https://lebelouvrage.bzh/portails/et/clotures">
             <img src="img/LebelOuvrage/1.png" width="367" height="194" alt="portailcloture-lebelouvrage">
         </a>
@@ -197,9 +205,10 @@ $webpage->appendContent(<<<HTML
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script.js"></script>
 <script>
   AOS.init();
 </script>
-HTML); // <- Footer + SCRIPT AOS
+HTML); // <- Footer + SCRIPT (AOS, JS)
 
 echo($webpage->toHtml());
