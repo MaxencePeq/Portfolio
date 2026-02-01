@@ -117,7 +117,7 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> (Photo cliquable)<br></p>
         
         <div class="spaceinvaders-img">
-            <img src="img/LebelOuvrage/accueil.png" width="367" height="194" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
+            <img src="img/LebelOuvrage/accueil.png" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
         </div>
     </div>
 </div>    
@@ -128,7 +128,7 @@ $webpage->appendContent(<<<HTML
         Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
         
         <div class="spaceinvaders-img">
-            <img src="img/buddysystem/accueil.png" width="367" height="194" alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
+            <img src="img/buddysystem/accueil.png"  alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
         </div>
     </div>
 </div>
@@ -140,7 +140,7 @@ $webpage->appendContent(<<<HTML
                 <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
                
                <div class="BakerySim-img">
-                    <img src="img/BakerySim-img/intro.png" width="450" height="230" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
+                    <img src="img/BakerySim-img/intro.png" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
                </div>
                
     </div>
@@ -163,7 +163,7 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
         
         <div class="webmusic-img">
-            <img src="img/webmusic-img/index.png" width="367" height="194" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
+            <img src="img/webmusic-img/index.png" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
         </div>
     </div>
 </div>
