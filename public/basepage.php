@@ -171,7 +171,7 @@ $webpage->appendContent(<<<HTML
 <div id="carrousel" class="carrousel">
     <span class="fermer" onclick="fermer()">×</span>
     <button class="fleche" onclick="precedent()">←</button>
-    <img id="image" src="image1.jpg" alt="Photo">
+    <img id="image" src="" alt="Photo">
     <button class="fleche" onclick="suivant()">→</button>
 </div>
 HTML); // <- Projet perso
