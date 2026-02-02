@@ -50,7 +50,7 @@ $webpage->appendContent(<<<HTML
                                 </a>
                             </div>
                             <div class="div3">
-                                <a href="https://symfony.com/"">
+                                <a href="redirected-page/Symfony-project.php">
                                     <img src="img/logoIndex/symfony.png" alt="Symfony">
                                  </a>
                             </div>
