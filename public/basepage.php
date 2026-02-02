@@ -41,22 +41,22 @@ $webpage->appendContent(<<<HTML
                         <div class="parent">
                             <div class="div1">
                                 <a href="https://laravel.com/">
-                                    <img src="img/logoIndex/laravel.png" alt="Laravel">
+                                    <img src="img/logoIndex/laravel.png" loading="lazy" alt="Laravel">
                                 </a>
                             </div>
                             <div class="div2">
                                 <a href="https://fr.react.dev/">
-                                    <img src="img/logoIndex/react.png.webp" alt="React">
+                                    <img src="img/logoIndex/react.png.webp" loading="lazy" alt="React">
                                 </a>
                             </div>
                             <div class="div3">
                                 <a href="redirected-page/Symfony-project.php">
-                                    <img src="img/logoIndex/symfony.png" alt="Symfony">
+                                    <img src="img/logoIndex/symfony.png" loading="lazy" alt="Symfony">
                                  </a>
                             </div>
                             <div class="div4">
                                 <a href="https://api-platform.com/">
-                                    <img src="img/logoIndex/API.png" alt="API">
+                                    <img src="img/logoIndex/API.png" loading="lazy" alt="API">
                                  </a>
                             </div>
                         </div>
@@ -91,18 +91,18 @@ $webpage->appendContent(<<<HTML
     <div class="card3">
         <h2 class="titre2">Langages et outils</h2>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/html-5.png" width="96" height="96" alt="HTML5"></li>
-            <li><img src="img/LanguagesEtOutils/css-3.png" width="96" height="96" alt="CSS3"></li>
-            <li><img src="img/LanguagesEtOutils/CSHARP.png" width="96" height="96" alt="C#"></li>
-            <li><img src="img/LanguagesEtOutils/Net.jpg" width="96" height="96" alt=".NET"></li>
-            <li><img src="img/LanguagesEtOutils/php.png" width="96" height="96" alt="PHP"></li>
-            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="96" height="96" alt="Composer"></li>
-            <li><img src="img/LanguagesEtOutils/symfony-icon.png" width="96" height="96" alt="Symfony"></li>
-            <li><img src="img/LanguagesEtOutils/serveur-sql.png" width="96" height="96" alt="SQL"></li>
-            <li><img src="img/LanguagesEtOutils/mysql.png" width="96" height="96" alt="MySql"></li>
-            <li><img src="img/LanguagesEtOutils/git.png" width="96" height="96" alt="Git"></li>
-            <li><img src="img/LanguagesEtOutils/js.png" width="96" height="96" alt="Javascript"></li>
-            <li><img src="img/LanguagesEtOutils/python.png" width="96" height="96" alt="Python"></li>
+            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="96" height="96" alt="HTML5"></li>
+            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="96" height="96" alt="CSS3"></li>
+            <li><img src="img/LanguagesEtOutils/CSHARP.png" loading="lazy" width="96" height="96" alt="C#"></li>
+            <li><img src="img/LanguagesEtOutils/Net.jpg" loading="lazy" width="96" height="96" alt=".NET"></li>
+            <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="96" height="96" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="96" height="96" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="96" height="96" alt="Symfony"></li>
+            <li><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="96" height="96" alt="SQL"></li>
+            <li><img src="img/LanguagesEtOutils/mysql.png" loading="lazy" width="96" height="96" alt="MySql"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="96" height="96" alt="Git"></li>
+            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="96" height="96" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/python.png" loading="lazy" width="96" height="96" alt="Python"></li>
         </ul>
     </div>
 </div>
@@ -117,17 +117,17 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> </p>
         
         <div class="spaceinvaders-img">
-            <img src="img/LebelOuvrage/accueil.png" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
+            <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
         </div>
     </div>
     
     <div class="projet-img">
         <h4>Langages et outils utilisé pour ce projet :</h4>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/symfony-icon.png" width="64" height="64" alt="Symfony"></li>
-            <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
-            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
-            <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"></li>
+            <li><img src="img/LanguagesEtOutils/php.png" width="64" loading="lazy" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" loading="lazy" height="64" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" width="64" loading="lazy" height="64" alt="Git"></li>
         </ul>
     </div>
     
@@ -139,19 +139,19 @@ $webpage->appendContent(<<<HTML
         Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
         
         <div class="spaceinvaders-img">
-            <img src="img/buddysystem/accueil.png"  alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
+            <img src="img/buddysystem/accueil.png" loading="lazy" alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
         </div>
     </div>
     <div class="projet-img">
         <h4>Langages et outils utilisé pour ce projet :</h4>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/symfony-icon.png" width="64" height="64" alt="Symfony"></li>
-            <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
-            <li><img src="img/LanguagesEtOutils/js.png" width="64" height="64" alt="Javascript"></li>
-            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
-            <li><img src="img/LanguagesEtOutils/serveur-sql.png" width="64" height="64" alt="SQL"></li>
-            <li><img src="img/LanguagesEtOutils/mysql.png" width="64" height="64" alt="MySql"></li>
-            <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"></li>
+            <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="64" height="64" alt="SQL"></li>
+            <li><img src="img/LanguagesEtOutils/mysql.png" loading="lazy" width="64" height="64" alt="MySql"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
         </ul>
     </div>
 </div>
@@ -165,15 +165,16 @@ $webpage->appendContent(<<<HTML
               id="inlineFrameExample"
               title="Exemple de cadre intégré"
               height="550"
-              src="https://bakerysimulator.alwaysdata.net/SpaceInvader/">
+              src="https://bakerysimulator.alwaysdata.net/SpaceInvader/"
+              loading="lazy">
             </iframe>
         </div>
     </div>
     <div class="projet-img">
         <h4>Langages et outils utilisé pour ce projet :</h4>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/js.png" width="64" height="64" alt="Javascript"></li>
-            <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
             
         </ul>
     </div>
@@ -185,14 +186,14 @@ $webpage->appendContent(<<<HTML
             <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
            
            <div class="BakerySim-img">
-                <img src="img/BakerySim-img/intro.png" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
+                <img src="img/BakerySim-img/intro.png" loading="lazy" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
            </div>
            <div class="projet-img">
             <h4>Langages et outils utilisé pour ce projet :</h4>
                 <ul class="icones1">
-                    <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
-                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
-                    <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+                    <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
+                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
+                    <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
                 </ul>
             </div>
     </div>
@@ -203,15 +204,15 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
         
         <div class="webmusic-img">
-            <img src="img/webmusic-img/index.png" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
+            <img src="img/webmusic-img/index.png" loading="lazy" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
         </div>
     </div>
     <div class="projet-img">
             <h4>Langages et outils utilisé pour ce projet :</h4>
                 <ul class="icones1">
-                    <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
-                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
-                    <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+                    <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
+                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
+                    <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
                 </ul>
             </div>
 </div>
