@@ -133,7 +133,21 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
 </div>
-    
+<div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
+    <div class="card6">
+        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br> Cliquez sur le jeu ! (Q - D pour le déplacement ; ESPACE pour shooté)</p>
+        
+        <div>
+            <iframe
+              id="inlineFrameExample"
+              title="Exemple de cadre intégré"
+              height="550"
+              src="https://bakerysimulator.alwaysdata.net/SpaceInvader/">
+            </iframe>
+        </div>
+    </div>
+</div>
 </div> 
         <div data-aos="fade-up"
          data-aos-duration="1000" class="card">
@@ -144,21 +158,6 @@ $webpage->appendContent(<<<HTML
                     <img src="img/BakerySim-img/intro.png" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
                </div>
                
-    </div>
-</div>
-<div data-aos="fade-up"
-     data-aos-duration="1000" class="card">
-    <div class="card6">
-        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br> Cliquez sur le jeu ! (Q - D pour le déplacement ; ESPACE pour shooté</p>
-        
-        <div>
-            <iframe
-              id="inlineFrameExample"
-              title="Exemple de cadre intégré"
-              height="550"
-              src="https://bakerysimulator.alwaysdata.net/SpaceInvader/">
-            </iframe>
-        </div>
     </div>
 </div>
 <div data-aos="fade-up"
