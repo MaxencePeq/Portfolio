@@ -91,30 +91,31 @@ $webpage->appendContent(<<<HTML
     <div class="card3">
         <h2 class="titre2">Langages et outils</h2>
         <ul class="icones1">
-            <li><img src="img/html-5.png" width="96" height="96" alt="HTML5"></li>
-            <li><img src="img/css-3.png" width="96" height="96" alt="CSS3"></li>
-            <li><img src="img/CSHARP.png" width="96" height="96" alt="C#"></li>
-            <li><img src="img/Net.jpg" width="96" height="96" alt=".NET"></li>
-            <li><img src="img/php.png" width="96" height="96" alt="PHP"></li>
-            <li><img src="img/COMPOSER.png" width="96" height="96" alt="Composer"></li>
-            <li><img src="img/symfony-icon.png" width="96" height="96" alt="Symfony"></li>
-            <li><img src="img/serveur-sql.png" width="96" height="96" alt="SQL"></li>
-            <li><img src="img/mysql.png" width="96" height="96" alt="MySql"></li>
-            <li><img src="img/git.png" width="96" height="96" alt="Git"></li>
-            <li><img src="img/js.png" width="96" height="96" alt="Javascript"></li>
-            <li><img src="img/python.png" width="96" height="96" alt="Python"></li>
+            <li><img src="img/LanguagesEtOutils/html-5.png" width="96" height="96" alt="HTML5"></li>
+            <li><img src="img/LanguagesEtOutils/css-3.png" width="96" height="96" alt="CSS3"></li>
+            <li><img src="img/LanguagesEtOutils/CSHARP.png" width="96" height="96" alt="C#"></li>
+            <li><img src="img/LanguagesEtOutils/Net.jpg" width="96" height="96" alt=".NET"></li>
+            <li><img src="img/LanguagesEtOutils/php.png" width="96" height="96" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="96" height="96" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" width="96" height="96" alt="Symfony"></li>
+            <li><img src="img/LanguagesEtOutils/serveur-sql.png" width="96" height="96" alt="SQL"></li>
+            <li><img src="img/LanguagesEtOutils/mysql.png" width="96" height="96" alt="MySql"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" width="96" height="96" alt="Git"></li>
+            <li><img src="img/LanguagesEtOutils/js.png" width="96" height="96" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/python.png" width="96" height="96" alt="Python"></li>
         </ul>
     </div>
 </div>
-HTML); // <- card 3 // images
+HTML
+); // <- card 3 // images
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card4">
-        <h2 class="titre2">Projets personnels </h2> 
+        <h2 class="titre2">Projets personnels <h4>(Photo cliquable ouvrant un carrousel d'images)</h4 </h2> 
         
-        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> (Photo cliquable)<br></p>
+        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> </p>
         
         <div class="spaceinvaders-img">
             <img src="img/LebelOuvrage/accueil.png" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
