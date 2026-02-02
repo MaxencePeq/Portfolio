@@ -151,10 +151,13 @@ $webpage->appendContent(<<<HTML
     <div class="card6">
         <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br></p>
         
-        <div class="spaceinvaders-img">
-            <img src="img/SpaceInvader-img/tir.png" width="367" height="194" alt="tir-SpaceInvader">
-            <img src="img/SpaceInvader-img/GameOVer.png" width="367" height="194" alt="gameover-SpaceInvader">
-            <img src="img/SpaceInvader-img/Bonus.png" width="367" height="194" alt="Bonus-SpaceInvader">
+        <div>
+            <iframe
+              id="inlineFrameExample"
+              title="Exemple de cadre intégré"
+              height="550"
+              src="https://bakerysimulator.alwaysdata.net/SpaceInvader/">
+            </iframe>
         </div>
     </div>
 </div>
@@ -190,5 +193,6 @@ $webpage->appendContent(<<<HTML
 </script>
 HTML
 ); // <- Footer + SCRIPT (AOS, JS)
+
 
 echo($webpage->toHtml());

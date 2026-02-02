@@ -388,6 +388,12 @@ body {
     opacity: 0.8;
 }
 
+/* IFRAME */
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 1200px) {
     .card {
