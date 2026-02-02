@@ -253,7 +253,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 110px;
+    min-height: 50px;
     padding: 1rem;
     background: #f7fbfd;
     border: 1px solid rgba(0,0,0,.08);
@@ -270,6 +270,11 @@ body {
     width: 72px;
     height: 72px;
     object-fit: contain;
+}
+
+.projet-img{
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
 /* ========== CARDS PROJETS ========== */
@@ -399,6 +404,10 @@ iframe {
     .card {
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    .projet-img{
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 

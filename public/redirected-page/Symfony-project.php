@@ -43,6 +43,19 @@ $webpage->appendContent(<<<HTML
     </div>
 </div>  
 HTML); // <- LEBEL OUVRAGE
+$webpage->appendContent(<<<HTML
+<div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
+    <div class="card6">
+        <p class="txt1"> (2026) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Buddy System</a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
+        Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
+        
+        <div class="spaceinvaders-img">
+            <img src="../img/buddysystem/accueil.png"  alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
+        </div>
+    </div>
+</div>  
+HTML); // <- BUDDY SYSTEM
 
 
 $webpage->appendContent(<<<HTML

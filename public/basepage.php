@@ -71,7 +71,7 @@ $webpage->appendContent(<<<HTML
     </div>
 </div>
 
-HTML); // <- Card 1
+HTML); // <- Card 1 : Présentation
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
@@ -83,7 +83,7 @@ $webpage->appendContent(<<<HTML
         <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique, puis un petit jeu web Idle/Autoclicker pendant l’été. Suivis d'un projet académique de réseau social étudiant et un site vitrine pour un artisant.</p>
     </div>
 </div>
-HTML); // <- Card 2
+HTML); // <- Card 2 : Parcours
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
@@ -106,8 +106,7 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>
-HTML
-); // <- card 3 // images
+HTML); // <- card 3 : Compétences
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
@@ -121,16 +120,39 @@ $webpage->appendContent(<<<HTML
             <img src="img/LebelOuvrage/accueil.png" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
         </div>
     </div>
+    
+    <div class="projet-img">
+        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" width="64" height="64" alt="Symfony"></li>
+            <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+        </ul>
+    </div>
+    
 </div>    
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card6">
-        <p class="txt1"> (2026) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Buddy System</a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
+        <p class="txt1"> (2026) <a href=""> Buddy System </a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
         Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
         
         <div class="spaceinvaders-img">
             <img src="img/buddysystem/accueil.png"  alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
         </div>
+    </div>
+    <div class="projet-img">
+        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" width="64" height="64" alt="Symfony"></li>
+            <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/js.png" width="64" height="64" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/serveur-sql.png" width="64" height="64" alt="SQL"></li>
+            <li><img src="img/LanguagesEtOutils/mysql.png" width="64" height="64" alt="MySql"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+        </ul>
     </div>
 </div>
 <div data-aos="fade-up"
@@ -147,17 +169,32 @@ $webpage->appendContent(<<<HTML
             </iframe>
         </div>
     </div>
+    <div class="projet-img">
+        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/js.png" width="64" height="64" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+            
+        </ul>
+    </div>
 </div>
 </div> 
-        <div data-aos="fade-up"
-         data-aos-duration="1000" class="card">
-            <div class="card4">
-                <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
-               
-               <div class="BakerySim-img">
-                    <img src="img/BakerySim-img/intro.png" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
-               </div>
-               
+    <div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
+        <div class="card4">
+            <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
+           
+           <div class="BakerySim-img">
+                <img src="img/BakerySim-img/intro.png" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
+           </div>
+           <div class="projet-img">
+            <h4>Langages et outils utilisé pour ce projet :</h4>
+                <ul class="icones1">
+                    <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
+                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
+                    <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+                </ul>
+            </div>
     </div>
 </div>
 <div data-aos="fade-up"
@@ -169,15 +206,25 @@ $webpage->appendContent(<<<HTML
             <img src="img/webmusic-img/index.png" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
         </div>
     </div>
+    <div class="projet-img">
+            <h4>Langages et outils utilisé pour ce projet :</h4>
+                <ul class="icones1">
+                    <li><img src="img/LanguagesEtOutils/php.png" width="64" height="64" alt="PHP"></li>
+                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" height="64" alt="Composer"></li>
+                    <li><img src="img/LanguagesEtOutils/git.png" width="64" height="64" alt="Git"></li>
+                </ul>
+            </div>
 </div>
+HTML); // <- Projet perso
 
+$webpage->appendContent(<<<HTML
 <div id="carrousel" class="carrousel">
     <span class="fermer" onclick="fermer()">×</span>
     <button class="fleche" onclick="precedent()">←</button>
     <img id="image" src="" alt="Photo">
     <button class="fleche" onclick="suivant()">→</button>
 </div>
-HTML); // <- Projet perso
+HTML); // <- Carrousel
 
 $year = date('Y');
 $webpage->appendContent(<<<HTML
