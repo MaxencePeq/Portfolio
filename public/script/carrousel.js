@@ -35,6 +35,14 @@ const collections = {
             "img/webmusic-img/song.png"
         ],
         lien: null
+    },
+    WebForColorblind : {
+        images: [
+            "img/WebsiteForColorblind/1.png",
+            "img/WebsiteForColorblind/2.png",
+            "img/WebsiteForColorblind/3.png",
+        ],
+        lien: null
     }
 }
 

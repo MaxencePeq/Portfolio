@@ -116,7 +116,7 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2026) <a href=""> Website for Colorblind </a> : Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
         
         <div class="spaceinvaders-img">
-            <img src="img/WebsiteForColorblind/3.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('')"">
+            <img src="img/WebsiteForColorblind/3.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
         </div>
     </div>
     
@@ -139,7 +139,7 @@ $webpage->appendContent(<<<HTML
         <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira</a> </p>
         
         <div class="spaceinvaders-img">
-            <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
+            <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')">
         </div>
     </div>
     
