@@ -70,7 +70,6 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
 </div>
-
 HTML); // <- Card 1 : Présentation
 
 $webpage->appendContent(<<<HTML
@@ -112,9 +111,32 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card4">
-        <h2 class="titre2">Projets personnels <h4>(Photo cliquable ouvrant un carrousel d'images)</h4 </h2> 
+        <h2 class="titre2">Projets personnels <h4>(Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a>)</h4 </h2> 
         
-        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira Ferraz </a> </p>
+        <p class="txt1"> (2026) <a href=""> Website for Colorblind </a> : Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
+        
+        <div class="spaceinvaders-img">
+            <img src="img/WebsiteForColorblind/3.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('')"">
+        </div>
+    </div>
+    
+    <div class="projet-img">
+        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"></li>
+            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="64" height="64" alt="CSS"></li>
+        </ul>
+    </div>
+    
+</div> 
+HTML); // <-- Premier projet + BASE TEXTE
+
+$webpage->appendContent(<<<HTML
+<div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
+    <div class="card4">
+        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira</a> </p>
         
         <div class="spaceinvaders-img">
             <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')"">
@@ -130,8 +152,10 @@ $webpage->appendContent(<<<HTML
             <li><img src="img/LanguagesEtOutils/git.png" width="64" loading="lazy" height="64" alt="Git"></li>
         </ul>
     </div>
-    
 </div>    
+HTML); // <-- LebelOuvrage
+
+$webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card6">
@@ -155,6 +179,9 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>
+HTML); // <-- Buddy System
+
+$webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card6">
@@ -179,8 +206,10 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>
-</div> 
-    <div data-aos="fade-up"
+HTML); // <-- Space Invader
+
+$webpage->appendContent(<<<HTML
+<div data-aos="fade-up"
      data-aos-duration="1000" class="card">
         <div class="card4">
             <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
@@ -198,6 +227,9 @@ $webpage->appendContent(<<<HTML
             </div>
     </div>
 </div>
+HTML); // <-- Bakery Simulator
+
+$webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card5">
@@ -208,15 +240,15 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
     <div class="projet-img">
-            <h4>Langages et outils utilisé pour ce projet :</h4>
-                <ul class="icones1">
-                    <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
-                    <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
-                    <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
-                </ul>
-            </div>
+        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
+            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
+        </ul>
+    </div>
 </div>
-HTML); // <- Projet perso
+HTML); // <- Web Music
 
 $webpage->appendContent(<<<HTML
 <div id="carrousel" class="carrousel">
