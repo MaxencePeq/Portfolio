@@ -137,7 +137,7 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card4">
-        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvintestprod.alwaysdata.net"> Calvin Nogueira</a> </p>
+        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> </p>
         
         <div class="spaceinvaders-img">
             <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')">
@@ -160,8 +160,10 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card6">
-        <p class="txt1"> (2026) <a href=""> Buddy System </a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
-        Créer des événements, modifier leur profil, rejoindre des groupes et plus encore.</p>
+        <p class="txt1"> (2026) <a href="https://buddysystem.calvin-nogueira.fr/"> Buddy System </a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
+        Créer des événements, modifier leur profil, rejoindre des groupes et plus encore. <br>
+        N'hésitez pas à vous inscrire <a href="https://buddysystem.calvin-nogueira.fr/"> ici </a> !
+        </p>
         
         <div class="spaceinvaders-img">
             <img src="img/buddysystem/accueil.png" loading="lazy" alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
