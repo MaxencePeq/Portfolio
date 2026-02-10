@@ -28,8 +28,9 @@ HTML);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
 <div class="JusteHereForMakePlace"></div>
-<div class="card">
-    <div data-aos="flip-left" class="card1">
+<div data-aos="fade-up"
+     data-aos-duration="1000"  class="card">
+    <div class="card1">
         <div class="card1-img">
                 <img src="img/BANANA.png" alt="Photo de Maxence">
         </div>
