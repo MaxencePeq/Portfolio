@@ -17,7 +17,7 @@ const collections = {
             "img/buddysystem/profile.png",
             "img/buddysystem/famille.png"
         ],
-        lien: null
+        lien: "https://buddysystem.calvin-nogueira.fr/"
     },
     BakerySimulator : {
         images: [
