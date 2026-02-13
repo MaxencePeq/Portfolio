@@ -15,15 +15,17 @@ $webpage->setTitle("Maxence Portfolio");
 $webpage->appendCssUrl("css/off_portfolio.css");
 $webpage->appendToHead(<<<HTML
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 HTML);
 
 $webpage->appendContent(<<<HTML
 <nav class="navbar">
-        <a class="navbar-item" href="https://github.com/MaxencePeq"><img src="img/githubIcon.png" width="40" height="40" alt="GitHub"></a>
-        <a class="navbar-item" href="monCV.php"><img src="img/cvlogo.png" width="40" height="40" alt="CV"></a>
-        <a class="navbar-item" href="https://www.instagram.com/pianomaxence/"><img src="img/instagram.png" width="40" height="40" alt="Instagram"></a>
-        <a class="navbar-item" href="https://www.linkedin.com/in/maxence-pequeno-671581329/"><img src="img/linkedin.png" width="40" height="40" alt="LinkedIn"></a>
-    </nav>
+    <a class="navbar-item" href="https://github.com/MaxencePeq"><img src="img/githubIcon.png" width="40" height="40" alt="GitHub"></a>
+    <a class="navbar-item" href="monCV.php"><img src="img/cvlogo.png" width="40" height="40" alt="CV"></a>
+    <a class="navbar-item" href="https://www.instagram.com/pianomaxence/"><img src="img/instagram.png" width="40" height="40" alt="Instagram"></a>
+    <a class="navbar-item" href="https://www.linkedin.com/in/maxence-pequeno-671581329/"><img src="img/linkedin.png" width="40" height="40" alt="LinkedIn"></a>
+    <button class="fa-regular fa-moon" id="theme-toggle" aria-label="Basculer le mode sombre"> </button>
+</nav>
 HTML);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
@@ -270,6 +272,7 @@ $webpage->appendContent(<<<HTML
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="script/carrousel.js"></script>
+<script src="script/darkmode.js"></script>
 <script>
   AOS.init();
 </script>

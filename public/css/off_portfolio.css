@@ -8,6 +8,75 @@ body {
     color: #333;
 }
 
+/* ========== DARK MODE ========== */
+body.dark-mode {
+    background: linear-gradient(to bottom, #1a1a2e, #16213e) fixed;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background: #2d2d44;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .navbar {
+    background-color: #2d2d44;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .titre1,
+body.dark-mode .titre2 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .txt1 {
+    color: #b8b8b8;
+}
+
+body.dark-mode .txt1 strong {
+    color: #f0f0f0;
+}
+
+body.dark-mode .txt1 a {
+    color: #4da6ff;
+}
+
+body.dark-mode .btn1 {
+    background: #4da6ff;
+    color: #000;
+}
+
+body.dark-mode .btn2 {
+    background: #3a3a5a;
+    color: #e0e0e0;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .parent > div,
+body.dark-mode .icones1 li {
+    background: #3a3a5a;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode iframe {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Bouton toggle dark mode */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+}
+
+body.dark-mode #theme-toggle {
+    background: none;
+    border: none;
+}
+
 /* ========== CARD - TEMPLATES ========== */
 .card {
     display: flex;
@@ -41,6 +110,8 @@ body {
     display: inline-flex;
     gap: 0.5rem;
     position: fixed;
+
+    flex-direction: row;
 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -519,5 +590,4 @@ iframe {
         grid-template-columns: 1fr;
     }
 }
-
 
