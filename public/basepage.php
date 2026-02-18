@@ -114,32 +114,12 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card4">
-        <h2 class="titre2">Projets personnels <h4>(Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a>)</h4 </h2> 
+        <h2 class="titre2">Projets professionels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
-        <p class="txt1"> (2026) <a href=""> Website for Colorblind </a> : Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
-        
-        <div class="spaceinvaders-img">
-            <img src="img/WebsiteForColorblind/3.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
+        <div class="title"> 
+            <h2> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> </h2>
+            <p> Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> <br> Lien : <a href="http://lebelouvrage.bzh>"> Lebelouvrage.bzh</a> </p>
         </div>
-    </div>
-    
-    <div class="projet-img">
-        <h4>Langages et outils utilisé pour ce projet :</h4>
-        <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
-            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"></li>
-            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="64" height="64" alt="CSS"></li>
-        </ul>
-    </div>
-    
-</div> 
-HTML); // <-- Premier projet + BASE TEXTE
-
-$webpage->appendContent(<<<HTML
-<div data-aos="fade-up"
-     data-aos-duration="1000" class="card">
-    <div class="card4">
-        <p class="txt1"> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> : Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> </p>
         
         <div class="spaceinvaders-img">
             <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')">
@@ -161,11 +141,44 @@ HTML); // <-- LebelOuvrage
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
+    <div class="card4">
+        <h2 class="titre2">Projets personnels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
+        
+        <div class="title">
+            <h2> (2026) <a href=""> Website for Colorblind </a> : </h2>
+            <p> Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
+        </div>
+        
+        <div class="spaceinvaders-img">
+            <img src="img/WebsiteForColorblind/3.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
+        </div>
+    </div>
+    
+    <div class="projet-img">
+        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
+            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"></li>
+            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="64" height="64" alt="CSS"></li>
+        </ul>
+    </div>
+    
+</div> 
+HTML); // <-- Premier projet + BASE TEXTE
+
+$webpage->appendContent(<<<HTML
+<div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
     <div class="card6">
-        <p class="txt1"> (2026) <a href="https://buddysystem.calvin-nogueira.fr/"> Buddy System </a> : Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
+    
+    <div class="title">
+        <h2> (2026) <a href="https://buddysystem.calvin-nogueira.fr/"> Buddy System </a>  </h2>
+        
+        <p> Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
         Créer des événements, modifier leur profil, rejoindre des groupes et plus encore. <br>
         N'hésitez pas à vous inscrire <a href="https://buddysystem.calvin-nogueira.fr/"> ici </a> !
         </p>
+    </div>
         
         <div class="spaceinvaders-img">
             <img src="img/buddysystem/accueil.png" loading="lazy" alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
@@ -190,8 +203,12 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card6">
-        <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> : Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br> Cliquez sur le jeu ! (Q - D pour le déplacement ; ESPACE pour shooté)</p>
-        
+    
+    <div class="title">
+        <h2> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> </h2>  
+        <p> Un petit jeu codé en Phaser - Javascript pour nous apprendre Phaser et les callbacks. <br> Cliquez sur le jeu ! (Q - D pour le déplacement ; ESPACE pour shooté)</p>
+    </div>
+       
         <div>
             <iframe
               id="inlineFrameExample"
@@ -217,8 +234,11 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
         <div class="card4">
-            <p class="txt1"> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> : Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
-           
+        
+        <div class="title">
+            <h2> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> </h2>
+            <p> Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
+        </div>
            <div class="BakerySim-img">
                 <img src="img/BakerySim-img/intro.png" loading="lazy" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
            </div>
@@ -238,7 +258,11 @@ $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div class="card5">
-        <p class="txt1"> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> : Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
+    
+    <div class="title">
+        <h2> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> </h2> 
+        <p> Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
+    </div>
         
         <div class="webmusic-img">
             <img src="img/webmusic-img/index.png" loading="lazy" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
@@ -278,6 +302,5 @@ $webpage->appendContent(<<<HTML
 </script>
 HTML
 ); // <- Footer + SCRIPT (AOS, JS)
-
 
 echo($webpage->toHtml());
