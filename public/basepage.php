@@ -150,7 +150,7 @@ $webpage->appendContent(<<<HTML
         </div>
         
         <div class="spaceinvaders-img">
-            <img src="img/WebsiteForColorblind/3.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
+            <img src="img/WebsiteForColorblind/2.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
         </div>
     </div>
     
@@ -164,7 +164,7 @@ $webpage->appendContent(<<<HTML
     </div>
     
 </div> 
-HTML); // <-- Premier projet + BASE TEXTE
+HTML); // <-- Premier projet + Website for Colorblind
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
