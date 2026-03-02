@@ -21,13 +21,16 @@ $webpage->appendContent(<<<HTML
 HTML);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
-<div data-aos="fade-up"
-     data-aos-duration="1000" class="z">
-    <div class="card4">
-        <h2 class="titre2">Ces projets sont en développement... </h2> 
-    </div>
-</div>  
-HTML); // HEADER
+<div class="spacement" style="margin-top: 8rem">
+    <div data-aos="fade-up"
+         data-aos-duration="1000" class="z">
+        <div class="card">
+            <h2 class="titre2">Ces projets sont en développement...</h2>
+            <p> <a href="../basepage.php"> Retour à la page d'accueil</a></p>
+        </div>
+    </div>  
+</div>
+HTML); // TEXTE
 
 
 
