@@ -35,6 +35,7 @@ $webpage->appendContent(<<<HTML
                 <img src="img/BANANA.png" alt="Photo de Maxence">
         </div>
         <div class="card1-texte">
+                
             <h1 class="titre1">Maxence Pequeno (Étudiant) </h1>
             <div class="card1-split">
                 <p class="txt1">
@@ -63,6 +64,7 @@ $webpage->appendContent(<<<HTML
                         </div>
                     </div>
                 </p>
+        
                 <div class="card1-links">
                     <a class="btn1" href="monCV.php">Voir mon CV</a>
                     <a class="btn2" href="https://github.com/MaxencePeq">Projets GitHub</a>
@@ -76,14 +78,39 @@ HTML); // <- Card 1 : Présentation
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
+    <div class="stat-card">
+    <h2 class="titre2">Statistiques GitHub</h2>
+        <div class="in-stat-card">
+            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MaxencePeq" />
+            
+            <img 
+              src="https://ghchart.rshah.org/MaxencePeq" 
+              alt="Contribution chart"
+            />
+        </div>
+        
+        <div class="citation">
+            <p>La majorité des projets sont sur un GitLab local à mon école et, par conséquent, non accessible en repo publique...</p>
+        </div>    
+
+    </div>
+
+</div>
+HTML); // <-- Statistique
+
+$webpage->appendContent(<<<HTML
+<div data-aos="fade-up"
+     data-aos-duration="1000" class="card">
     <div class="card2">
         <h2 class="titre2">Parcours</h2>
         <p class="txt1">Diplômé d’un baccalauréat général avec spécialités Sciences Numériques et Mathématiques. (Lycée Franklin Roosevelt, Reims — 2024) </p>
         <p class="txt1">Actuellement en 2<sup>e</sup> année d’IUT Informatique à Reims (spécialisation développement C#).</p>
         <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique, puis un petit jeu web Idle/Autoclicker pendant l’été. Suivis d'un projet académique de réseau social étudiant et un site vitrine pour un artisant.</p>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MaxencePeq" />
     </div>
+
 </div>
-HTML); // <- Card 2 : Parcours
+HTML); // <-- Parcours
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
@@ -106,7 +133,7 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>
-HTML); // <- card 3 : Compétences
+HTML); // <- Compétences
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
