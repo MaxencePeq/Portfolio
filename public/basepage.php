@@ -1,11 +1,9 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
 
 use Maxence\OfficialGitHubPortfolio\html\WebPage;
 
@@ -145,7 +143,7 @@ $webpage->appendContent(<<<HTML
         <h2 class="titre2">Projets personnels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
         <div class="title">
-            <h2> (2026) <a href=""> Website for Colorblind </a> : </h2>
+            <h2> (2026) <a href="https://github.com/MaxencePeq/Website-Colorblind-Extension"> Website for Colorblind </a> : </h2>
             <p> Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
         </div>
         
