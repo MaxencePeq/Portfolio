@@ -41,22 +41,22 @@ $webpage->appendContent(<<<HTML
                     <div class="laravelsymfony">
                         <div class="parent">
                             <div class="div1">
-                                <a href="https://laravel.com/">
+                                <a href="redirected-page/Incoming.php">
                                     <img src="img/logoIndex/laravel.png" loading="lazy" alt="Laravel">
                                 </a>
                             </div>
                             <div class="div2">
-                                <a href="https://fr.react.dev/">
+                                <a href="redirected-page/Incoming.php">
                                     <img src="img/logoIndex/react.png.webp" loading="lazy" alt="React">
                                 </a>
                             </div>
                             <div class="div3">
-                                <a href="redirected-page/Symfony-project.php">
+                                <a href="#Symfony">
                                     <img src="img/logoIndex/symfony.png" loading="lazy" alt="Symfony">
                                  </a>
                             </div>
                             <div class="div4">
-                                <a href="https://api-platform.com/">
+                                <a href="redirected-page/Incoming.php">
                                     <img src="img/logoIndex/API.png" loading="lazy" alt="API">
                                  </a>
                             </div>
@@ -111,7 +111,7 @@ HTML); // <- card 3 : Compétences
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div class="card4">
+    <div id="Symfony" class="card4">
         <h2 class="titre2">Projets professionels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
         <div class="title"> 
