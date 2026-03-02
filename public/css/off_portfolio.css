@@ -417,6 +417,35 @@ body.dark-mode #theme-toggle {
     text-align: center;
 }
 
+/* ========== OVERLAY  ========== */
+
+.click-overlay-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.click-overlay-wrapper::after {
+    content: 'Cliquez ici !';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    transition: opacity 0.3s;
+    pointer-events: none; /* Pour solutionner le clique */
+}
+
+
+.click-overlay-wrapper:hover::after {
+    opacity: 0;
+}
 
 
 /* ========== CV PAGE ========== */
@@ -484,11 +513,14 @@ body.dark-mode #theme-toggle {
 }
 
 .miniature {
-    width: 70%; /* ou max-width: 70%; */
-    height: auto; /* garde le ratio automatiquement */
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    display: block;
     cursor: pointer;
     transition: opacity 0.3s;
 }
+
 
 .miniature:hover {
     opacity: 0.8;

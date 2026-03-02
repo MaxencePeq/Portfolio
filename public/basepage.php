@@ -146,8 +146,12 @@ $webpage->appendContent(<<<HTML
             <p> Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> <br> Lien : <a href="http://lebelouvrage.bzh>"> Lebelouvrage.bzh</a> </p>
         </div>
         
-        <div class="spaceinvaders-img">
-            <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')">
+        <div style="display:flex; justify-content:center; margin-top:1.5rem;">
+            <div class="click-overlay-wrapper"> 
+                <div class="spaceinvaders-img">
+                    <img src="img/LebelOuvrage/accueil.png" loading="lazy" alt="accueil-lebelouvrage" class="miniature" onclick="ouvrirCarrousel('LebelOuvrage')">
+                </div>
+            </div>
         </div>
     </div>
     
@@ -173,9 +177,12 @@ $webpage->appendContent(<<<HTML
             <h2> (2026) <a href="https://github.com/MaxencePeq/Website-Colorblind-Extension"> Website for Colorblind </a> : </h2>
             <p> Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
         </div>
-        
-        <div class="spaceinvaders-img">
-            <img src="img/WebsiteForColorblind/2.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
+        <div style="display:flex; justify-content:center; margin-top:1.5rem;">
+            <div class="click-overlay-wrapper">
+                <div class="spaceinvaders-img">
+                    <img src="img/WebsiteForColorblind/2.png" loading="lazy" alt="Extension-image" class="miniature" onclick="ouvrirCarrousel('WebForColorblind')">
+                </div>
+            </div>
         </div>
     </div>
     
@@ -201,16 +208,19 @@ $webpage->appendContent(<<<HTML
         
         <p> Un projet universitaire de réseau social étudiant. Les membres inscrits peuvent chatter, ajouter des amies <br>
         Créer des événements, modifier leur profil, rejoindre des groupes et plus encore. <br>
-        N'hésitez pas à vous inscrire <a href="https://buddysystem.calvin-nogueira.fr/"> ici </a> !
+        N'hésitez pas à vous inscrire <a href="https://buddysystem.calvin-nogueira.fr/"> ici </a> ! Le site est utilisable juste en dessous.
         </p>
+                
     </div>
         <div class="iframe-wrapper">
             <div class="iframe-container">
-                <iframe
-                  src="https://buddysystem.calvin-nogueira.fr/"
-                  loading="lazy"
-                  title="Buddy System">
-                </iframe>
+                <div class="click-overlay-wrapper">
+                    <iframe
+                      src="https://buddysystem.calvin-nogueira.fr/"
+                      loading="lazy"
+                      title="Buddy System">
+                    </iframe>
+                </div>
             </div>
         </div>
         <div class="iframe-open-link">
@@ -274,9 +284,15 @@ $webpage->appendContent(<<<HTML
             <h2> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> </h2>
             <p> Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
         </div>
-           <div class="BakerySim-img">
-                <img src="img/BakerySim-img/intro.png" loading="lazy" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
-           </div>
+        
+        <div style="display:flex; justify-content:center; margin-top:1.5rem;">
+            <div class="click-overlay-wrapper">
+               <div class="BakerySim-img">
+                    <img src="img/BakerySim-img/intro.png" loading="lazy" alt="intro-BakerySimulator" class="miniature" onclick="ouvrirCarrousel('BakerySimulator')">
+               </div>
+            </div>
+        </div>
+        
            <div class="projet-img">
             <h4>Langages et outils utilisé pour ce projet :</h4>
                 <ul class="icones1">
@@ -298,9 +314,12 @@ $webpage->appendContent(<<<HTML
         <h2> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> </h2> 
         <p> Une petite application qui répertorie des genres / albums / artistes de musique et crée des liens Youtube <br> automatique pour retrouver les musiques.  </p>
     </div>
-        
-        <div class="webmusic-img">
-            <img src="img/webmusic-img/index.png" loading="lazy" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
+        <div style="display:flex; justify-content:center; margin-top:1.5rem;">
+            <div class="click-overlay-wrapper">
+                <div class="webmusic-img">
+                    <img src="img/webmusic-img/index.png" loading="lazy" alt="index-webmusic" class="miniature" onclick="ouvrirCarrousel('WebMusic')">
+                </div>
+            </div>
         </div>
     </div>
     <div class="projet-img">
