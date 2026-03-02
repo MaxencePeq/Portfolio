@@ -417,6 +417,8 @@ body.dark-mode #theme-toggle {
     text-align: center;
 }
 
+
+
 /* ========== CV PAGE ========== */
 .card-body {
     width: 100%;
@@ -498,7 +500,68 @@ iframe {
     width: 100%;
 }
 
-/* ========== MEDIA QUERIES ========== */
+/* IFRAME CONTAINER - Buddy System */
+.iframe-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.iframe-container {
+    width: 100%;
+    max-width: 860px;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0,0,0,0.08);
+    background: #f0f0f0;
+}
+
+/* Petite barre style navigateur */
+.iframe-container::before {
+    content: '';
+    display: block;
+    background: #e8e8e8;
+    color: #bbb;
+    font-size: 13px;
+    padding: 8px 14px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px 12px 0 0;
+}
+
+.iframe-container iframe {
+    width: 1920px;
+    height: 1080px;
+    transform: scale(0.44);
+    transform-origin: top left;
+    border: none;
+    /* Compense la barre du haut (~33px) */
+    margin-top: 0;
+}
+
+/* Lien "Ouvrir en plein écran" */
+.iframe-open-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+
+.iframe-open-link a {
+    font-size: 0.85rem;
+    color: #0066cc;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.iframe-open-link a:hover {
+    opacity: 1;
+}
+
+    /* ========== MEDIA QUERIES ========== */
 @media (max-width: 1200px) {
     .card {
         margin-left: 2rem;

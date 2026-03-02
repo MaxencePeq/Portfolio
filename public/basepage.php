@@ -204,9 +204,19 @@ $webpage->appendContent(<<<HTML
         N'hésitez pas à vous inscrire <a href="https://buddysystem.calvin-nogueira.fr/"> ici </a> !
         </p>
     </div>
-        
-        <div class="spaceinvaders-img">
-            <img src="img/buddysystem/accueil.png" loading="lazy" alt="accueil-buddysystem" class="miniature" onclick="ouvrirCarrousel('BuddySystem')">
+        <div class="iframe-wrapper">
+            <div class="iframe-container">
+                <iframe
+                  src="https://buddysystem.calvin-nogueira.fr/"
+                  loading="lazy"
+                  title="Buddy System">
+                </iframe>
+            </div>
+        </div>
+        <div class="iframe-open-link">
+            <a href="https://buddysystem.calvin-nogueira.fr/" target="_blank">
+                ↗ Ouvrir en plein écran
+            </a>
         </div>
     </div>
     <div class="projet-img">
