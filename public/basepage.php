@@ -68,6 +68,7 @@ $webpage->appendContent(<<<HTML
                 <div class="card1-links">
                     <a class="btn1" href="monCV.php">Voir mon CV</a>
                     <a class="btn2" href="https://github.com/MaxencePeq">Projets GitHub</a>
+                    <a class="btn2" href="mailto:maxence.pequeno@icloud.com"> Me contacter </a>
                 </div>
             </div>
         </div>
@@ -96,7 +97,7 @@ $webpage->appendContent(<<<HTML
     </div>
 
 </div>
-HTML); // <-- Statistique
+HTML); // <-- Statistiques Github
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
@@ -106,7 +107,6 @@ $webpage->appendContent(<<<HTML
         <p class="txt1">Diplômé d’un baccalauréat général avec spécialités Sciences Numériques et Mathématiques. (Lycée Franklin Roosevelt, Reims — 2024) </p>
         <p class="txt1">Actuellement en 2<sup>e</sup> année d’IUT Informatique à Reims (spécialisation développement C#).</p>
         <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique, puis un petit jeu web Idle/Autoclicker pendant l’été. Suivis d'un projet académique de réseau social étudiant et un site vitrine pour un artisant.</p>
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MaxencePeq" />
     </div>
 
 </div>
