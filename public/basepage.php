@@ -91,7 +91,7 @@ $webpage->appendContent(<<<HTML
         </div>
         
         <div class="citation">
-            <p>La majorité des projets sont sur un GitLab local à mon école et, par conséquent, non accessible en repo publique...</p>
+            <p>La majorité des projets sont sur un GitLab local de mon école et, par conséquent, non accessible en repo publique...</p>
         </div>    
 
     </div>
@@ -282,7 +282,7 @@ $webpage->appendContent(<<<HTML
         
         <div class="title">
             <h2> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> </h2>
-            <p> Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte (à l'époque fait par ia) pour modérer les comptes.  </p>
+            <p> Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte pour modérer les comptes.  </p>
         </div>
         
         <div style="display:flex; justify-content:center; margin-top:1.5rem;">
