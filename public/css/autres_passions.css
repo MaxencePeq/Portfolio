@@ -45,3 +45,15 @@ body.dark-mode .livre-item {
 body.dark-mode .livre-titre {
     color: #b8b8b8;
 }
+
+.autres-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+body.dark-mode .autres-intro p {
+    color: #b8b8b8;
+}
+
