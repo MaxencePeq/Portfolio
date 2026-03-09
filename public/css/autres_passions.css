@@ -53,6 +53,13 @@ body.dark-mode .livre-titre {
     margin-bottom: 1.5rem;
 }
 
+.autres-intro p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
 body.dark-mode .autres-intro p {
     color: #b8b8b8;
 }
