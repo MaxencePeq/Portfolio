@@ -18,6 +18,7 @@ HTML);
 
 $webpage->appendContent(<<<HTML
 <nav class="navbar">
+    <a class="navbar-item" href="#home"><img src="img/home.svg" width="40" height="40" alt="home"></a>
     <a class="navbar-item" href="https://github.com/MaxencePeq"><img src="img/githubIcon.png" width="40" height="40" alt="GitHub"></a>
     <a class="navbar-item" href="monCV.php"><img src="img/cvlogo.png" width="40" height="40" alt="CV"></a>
     <a class="navbar-item" href="https://www.instagram.com/pianomaxence/"><img src="img/instagram.png" width="40" height="40" alt="Instagram"></a>
@@ -30,7 +31,7 @@ $webpage->appendContent(<<<HTML
 <div class="JusteHereForMakePlace"></div>
 <div data-aos="fade-up"
      data-aos-duration="1000"  class="card">
-    <div class="card1">
+    <div id="home" class="card1">
         <div class="card1-img">
                 <img src="img/BANANA.png" alt="Photo de Maxence">
         </div>
@@ -79,20 +80,30 @@ HTML); // <- Card 1 : Présentation
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div class="stat-card">
+    <h3 class="stat-card">
     <h2 class="titre2">Statistiques GitHub</h2>
-        <div class="in-stat-card">
+        <h3 class="in-stat-card">
+        
             <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MaxencePeq" />
+            
+            <h3 class="middle">
+                <p>Statistique Github</p>
+            </h3> 
             
             <img 
               src="https://ghchart.rshah.org/MaxencePeq" 
               alt="Contribution chart"
             />
+            
+            <h3 class="middle" >
+                <p> Statistique Gitlab (local de mon école)  </p>
+            </h3>
+
+            <img src="img/gitlab.png" alt="GitLab contributions" class="gitlab-graph">
+
         </div>
         
-        <div class="citation">
-            <p>La majorité des projets sont sur un GitLab local de mon école et, par conséquent, non accessible en repo publique...</p>
-        </div>    
+           
 
     </div>
 
