@@ -1,0 +1,47 @@
+.livre-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.livre-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.75rem;
+    background: #f7fbfd;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.08);
+    width: 130px;
+}
+
+.livre-item img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.livre-titre {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+
+body.dark-mode .livre-item {
+    background: #3a3a5a;
+    border-color: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .livre-titre {
+    color: #b8b8b8;
+}
