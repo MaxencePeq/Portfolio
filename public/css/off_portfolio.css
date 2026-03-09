@@ -75,6 +75,25 @@ body.dark-mode iframe {
 body.dark-mode #theme-toggle {
     background: none;
     border: none;
+
+
+}
+/* Navbar hover en dark mode */
+body.dark-mode .navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Citation en dark mode */
+body.dark-mode .citation {
+    background-color: #3a3a5a;
+    border-left-color: #4da6ff;
+    color: #b8b8b8;
+}
+
+/* Images GitHub stats en dark mode (inversion pour fond sombre) */
+body.dark-mode .in-stat-card img {
+    filter: invert(1) hue-rotate(180deg);
+    border-radius: 8px;
 }
 /* --- Citation --- */
 .citation {
@@ -426,7 +445,7 @@ body.dark-mode #theme-toggle {
 }
 
 .click-overlay-wrapper::after {
-    content: 'Cliquez ici !';
+    content: "Cliquez ici pour ouvrir le carrousel d'images !";
     position: absolute;
     inset: 0;
     display: flex;
@@ -712,5 +731,37 @@ iframe {
     .parent {
         grid-template-columns: 1fr;
     }
+}
+
+/* ========== SOUS-TITRES SECTIONS ========== */
+.sous-titre {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+body.dark-mode .sous-titre {
+    color: #f0f0f0;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========== LABELS SOUS ICONES ========== */
+.icones1 li {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.icones1 li span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #334155;
+    text-align: center;
+}
+
+body.dark-mode .icones1 li span {
+    color: #b8b8b8;
 }
 
