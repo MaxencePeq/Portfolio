@@ -1,0 +1,221 @@
+/* ========== MENTIONS LÉGALES ========== */
+
+.mentions-card {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mentions-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mentions-back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.mentions-back:hover {
+    color: #004999;
+    transform: translateX(-4px);
+}
+
+.mentions-subtitle {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+}
+
+/* Sections */
+.mentions-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mentions-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+
+.mentions-section .titre2 {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+/* Liste d'informations */
+.mentions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mentions-list li {
+    padding: 0.6rem 0;
+    font-size: 1rem;
+    color: #334155;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    line-height: 1.7;
+}
+
+.mentions-list li:last-child {
+    border-bottom: none;
+}
+
+.mentions-list li strong {
+    color: #0f172a;
+    font-weight: 600;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.mentions-list li a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.mentions-list li a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+/* Tableau cookies */
+.mentions-cookie-table {
+    margin-top: 1.2rem;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mentions-cookie-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.mentions-cookie-table thead {
+    background: #f1f5f9;
+}
+
+.mentions-cookie-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #0f172a;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.mentions-cookie-table td {
+    padding: 0.75rem 1rem;
+    color: #334155;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.mentions-cookie-table code {
+    background: #e2e8f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: 'Courier New', monospace;
+    color: #0f172a;
+}
+
+/* Note de bas de page */
+.mentions-footer-note {
+    text-align: center;
+    padding-top: 1rem;
+    opacity: 0.7;
+}
+
+.mentions-footer-note em {
+    font-size: 0.9rem;
+}
+
+/* ========== DARK MODE ========== */
+body.dark-mode .mentions-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .mentions-section {
+    border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .mentions-back {
+    color: #4da6ff;
+}
+
+body.dark-mode .mentions-back:hover {
+    color: #80bfff;
+}
+
+body.dark-mode .mentions-subtitle {
+    color: #8899aa;
+}
+
+body.dark-mode .mentions-list li {
+    color: #b8b8b8;
+    border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-mode .mentions-list li strong {
+    color: #f0f0f0;
+}
+
+body.dark-mode .mentions-list li a {
+    color: #4da6ff;
+}
+
+body.dark-mode .mentions-cookie-table {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .mentions-cookie-table thead {
+    background: #3a3a5a;
+}
+
+body.dark-mode .mentions-cookie-table th {
+    color: #f0f0f0;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .mentions-cookie-table td {
+    color: #b8b8b8;
+    border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark-mode .mentions-cookie-table code {
+    background: #4a4a6a;
+    color: #e0e0e0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .mentions-card {
+        margin: 3rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .mentions-section .titre2 {
+        font-size: 1.15rem;
+    }
+
+    .mentions-list li strong {
+        display: block;
+        margin-bottom: 0.2rem;
+    }
+
+    .mentions-cookie-table th,
+    .mentions-cookie-table td {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}

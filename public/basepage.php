@@ -377,7 +377,7 @@ HTML); // <- Carrousel
 $year = date('Y');
 $webpage->appendContent(<<<HTML
 <footer class="footer">
-    <small>© $year Maxence Pequeno — Portfolio</small>
+        <small>© $year Maxence Pequeno — Portfolio · <a href="mentions-legales.php">Mentions légales</a></small>
 </footer>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
