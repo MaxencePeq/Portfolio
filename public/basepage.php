@@ -70,6 +70,7 @@ $webpage->appendContent(<<<HTML
                 <div class="card1-links">
                     <a class="btn1" href="monCV.php">Voir mon CV</a>
                     <a class="btn2" href="https://github.com/MaxencePeq">Projets GitHub</a>
+                    <a class="btn2" href="#autres">Mes passions</a>
                     <a class="btn2" href="mailto:maxence.pequeno@icloud.com"> Me contacter </a>
                 </div>
             </div>
@@ -362,9 +363,9 @@ $webpage->appendContent(<<<HTML
 HTML); // <- Web Music
 
 $webpage->appendContent(<<<HTML
-<div data-aos="fade-up"
+<div id="autres" data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div id="WebMusic" class="card5">
+    <div class="card5">
     
         <div class="title">
             <h2> Autres </h2> 

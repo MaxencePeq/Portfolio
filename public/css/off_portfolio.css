@@ -12,10 +12,6 @@ body {
     text-align: center;
 }
 
-#home {
-    scroll-margin-top: 100px;
-}
-
 /* ========== DARK MODE ========== */
 body.dark-mode {
     background: linear-gradient(to bottom, #1a1a2e, #16213e) fixed;
@@ -290,8 +286,8 @@ body.dark-mode .gitlab-graph {
 
 .card1-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
-    margin-top: 1rem;
     justify-content: center;
 }
 
