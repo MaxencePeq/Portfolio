@@ -119,35 +119,35 @@ $webpage->appendContent(<<<HTML
 
         <h3 class="sous-titre">Frameworks</h3>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"><span>Symfony</span></li>
+            <li><a href="#BuddySystem"><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"><span>Symfony</span></a></li>
             <li><img src="img/LanguagesEtOutils/laravel.png" loading="lazy" width="64" height="64" alt="Laravel"><span>Laravel</span></li>
             <li><img src="img/LanguagesEtOutils/react.png" loading="lazy" width="64" height="64" alt="React"><span>React</span></li>
-            <li><img src="img/LanguagesEtOutils/Net.png" loading="lazy" width="64" height="64" alt=".NET"><span>.NET</span></li>            
+            <li><img src="img/LanguagesEtOutils/Net.png" loading="lazy" width="64" height="64" alt=".NET"><span>.NET</span></li>
             <li><img src="img/LanguagesEtOutils/api.webp" loading="lazy" width="64" height="64" alt="API Platform"><span>API Platform</span></li>
         </ul>
 
         <h3 class="sous-titre">Outils & Technologies</h3>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/mysql.png" loading="lazy" width="64" height="64" alt="MySQL"><span>MySQL</span></li>
-            <li><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="64" height="64" alt="SQL"><span>SQL</span></li>
-            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"><span>Git</span></li>
+            <li><a href="#BuddySystem"><img src="img/LanguagesEtOutils/mysql.png" loading="lazy" width="64" height="64" alt="MySQL"><span>MySQL</span></a></li>
+            <li><a href="#BuddySystem"><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="64" height="64" alt="SQL"><span>SQL</span></a></li>
+            <li><a href="#LebelOuvrage"><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"><span>Git</span></a></li>
             <li><img src="img/LanguagesEtOutils/phpmyadmin.png" loading="lazy" width="64" height="64" alt="phpMyAdmin"><span>phpMyAdmin</span></li>
-            <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"><span>Composer</span></li>
+            <li><a href="#BakerySimulator"><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"><span>Composer</span></a></li>
             <li><img src="img/LanguagesEtOutils/npm.png" loading="lazy" width="64" height="64" alt="npm"><span>npm</span></li>
         </ul>
 
         <h3 class="sous-titre">Langages</h3>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"><span>PHP</span></li>
-            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="JavaScript"><span>JavaScript</span></li>
+            <li><a href="#BakerySimulator"><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"><span>PHP</span></a></li>
+            <li><a href="#SpaceInvaders"><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="JavaScript"><span>JavaScript</span></a></li>
             <li><img src="img/LanguagesEtOutils/CSHARP.png" loading="lazy" width="64" height="64" alt="C#"><span>C#</span></li>
             <li><img src="img/LanguagesEtOutils/python.png" loading="lazy" width="64" height="64" alt="Python"><span>Python</span></li>
-            <li><img src="img/LanguagesEtOutils/twig.png" loading="lazy" width="64" height="64" alt="Twig"><span>Twig</span></li>
-            <li><img src="img/LanguagesEtOutils/blade.png" loading="lazy" width="64" height="64" alt="Blade"><span>Blade</span></li>
+            <li><a href="#BuddySystem"><img src="img/LanguagesEtOutils/twig.png" loading="lazy" width="64" height="64" alt="Twig"><span>Twig</span></a></li>
+            <li><img src="img/LanguagesEtOutils/blade.png" loading="lazy" width="64" height="64" alt="Blade"><span>Blade</span></></li>
             <li><img src="img/LanguagesEtOutils/jsx.png" loading="lazy" width="64" height="64" alt="JSX"><span>JSX</span></li>
             <li><img src="img/LanguagesEtOutils/typescript.png" loading="lazy" width="64" height="64" alt="TypeScript"><span>TypeScript</span></li>
-            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"><span>HTML</span></li>            
-            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="64" height="64" alt="CSS"><span>CSS</span></li>
+            <li><a href="#Colorblind"><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"><span>HTML</span></a></li>
+            <li><a href="#Colorblind"><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="64" height="64" alt="CSS"><span>CSS</span></a></li>
         </ul>
     </div>
 </div>
@@ -157,7 +157,7 @@ HTML); // <- Compétences
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div id="Symfony" class="card4">
+    <div id="LebelOuvrage"" class="card4">
         <h2 class="titre2">Projets professionels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
         <div class="title"> 
@@ -190,7 +190,7 @@ HTML); // <-- LebelOuvrage
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div class="card4">
+    <div id="Colorblind" class="card4">
         <h2 class="titre2">Projets personnels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
         <div class="title">
@@ -221,7 +221,7 @@ HTML); // <-- Premier projet + Website for Colorblind
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div class="card6">
+    <div id="BuddySystem" class="card6">
     
     <div class="title">
         <h2> (2026) <a href="https://buddysystem.calvin-nogueira.fr/"> Buddy System </a>  </h2>
@@ -268,7 +268,7 @@ HTML); // <-- Buddy System
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div class="card6">
+    <div id="SpaceInvaders" class="card6">
     
     <div class="title">
         <h2> (2025) <a href="https://github.com/MaxencePeq/Space-Invaders.git"> Space-Invaders</a> </h2>  
@@ -299,7 +299,7 @@ HTML); // <-- Space Invader
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-        <div class="card4">
+        <div id="BakerySimulator" class="card4">
         
         <div class="title">
             <h2> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> </h2>
@@ -329,7 +329,7 @@ HTML); // <-- Bakery Simulator
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div class="card5">
+    <div id="WebMusic" class="card5">
     
     <div class="title">
         <h2> (2024) <a href="https://github.com/MaxencePeq/WebMusic"> WebMusic</a> </h2> 
