@@ -113,26 +113,45 @@ $webpage->appendContent(<<<HTML
 HTML); // <-- Parcours
 
 $webpage->appendContent(<<<HTML
-<div data-aos="fade-up"
-     data-aos-duration="1000" class="card">
+<div data-aos="fade-up" data-aos-duration="1000" class="card">
     <div class="card3">
-        <h2 class="titre2">Langages et outils</h2>
+        <h2 class="titre2">Technologies & Stack</h2>
+
+        <h3 class="sous-titre">Frameworks</h3>
         <ul class="icones1">
-            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="96" height="96" alt="HTML5"></li>
-            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="96" height="96" alt="CSS3"></li>
-            <li><img src="img/LanguagesEtOutils/CSHARP.png" loading="lazy" width="96" height="96" alt="C#"></li>
-            <li><img src="img/LanguagesEtOutils/Net.jpg" loading="lazy" width="96" height="96" alt=".NET"></li>
-            <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="96" height="96" alt="PHP"></li>
-            <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="96" height="96" alt="Composer"></li>
-            <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="96" height="96" alt="Symfony"></li>
-            <li><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="96" height="96" alt="SQL"></li>
-            <li><img src="img/LanguagesEtOutils/mysql.png" loading="lazy" width="96" height="96" alt="MySql"></li>
-            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="96" height="96" alt="Git"></li>
-            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="96" height="96" alt="Javascript"></li>
-            <li><img src="img/LanguagesEtOutils/python.png" loading="lazy" width="96" height="96" alt="Python"></li>
+            <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"><span>Symfony</span></li>
+            <li><img src="img/LanguagesEtOutils/laravel.png" loading="lazy" width="64" height="64" alt="Laravel"><span>Laravel</span></li>
+            <li><img src="img/LanguagesEtOutils/react.png" loading="lazy" width="64" height="64" alt="React"><span>React</span></li>
+            <li><img src="img/LanguagesEtOutils/Net.png" loading="lazy" width="64" height="64" alt=".NET"><span>.NET</span></li>            
+            <li><img src="img/LanguagesEtOutils/api.webp" loading="lazy" width="64" height="64" alt="API Platform"><span>API Platform</span></li>
+        </ul>
+
+        <h3 class="sous-titre">Outils & Technologies</h3>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/mysql.png" loading="lazy" width="64" height="64" alt="MySQL"><span>MySQL</span></li>
+            <li><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="64" height="64" alt="SQL"><span>SQL</span></li>
+            <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"><span>Git</span></li>
+            <li><img src="img/LanguagesEtOutils/phpmyadmin.png" loading="lazy" width="64" height="64" alt="phpMyAdmin"><span>phpMyAdmin</span></li>
+            <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"><span>Composer</span></li>
+            <li><img src="img/LanguagesEtOutils/npm.png" loading="lazy" width="64" height="64" alt="npm"><span>npm</span></li>
+        </ul>
+
+        <h3 class="sous-titre">Langages</h3>
+        <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"><span>PHP</span></li>
+            <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="JavaScript"><span>JavaScript</span></li>
+            <li><img src="img/LanguagesEtOutils/CSHARP.png" loading="lazy" width="64" height="64" alt="C#"><span>C#</span></li>
+            <li><img src="img/LanguagesEtOutils/python.png" loading="lazy" width="64" height="64" alt="Python"><span>Python</span></li>
+            <li><img src="img/LanguagesEtOutils/twig.png" loading="lazy" width="64" height="64" alt="Twig"><span>Twig</span></li>
+            <li><img src="img/LanguagesEtOutils/blade.png" loading="lazy" width="64" height="64" alt="Blade"><span>Blade</span></li>
+            <li><img src="img/LanguagesEtOutils/jsx.png" loading="lazy" width="64" height="64" alt="JSX"><span>JSX</span></li>
+            <li><img src="img/LanguagesEtOutils/typescript.png" loading="lazy" width="64" height="64" alt="TypeScript"><span>TypeScript</span></li>
+            <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"><span>HTML</span></li>            
+            <li><img src="img/LanguagesEtOutils/css-3.png" loading="lazy" width="64" height="64" alt="CSS"><span>CSS</span></li>
         </ul>
     </div>
 </div>
+
 HTML); // <- Compétences
 
 $webpage->appendContent(<<<HTML
@@ -160,6 +179,7 @@ $webpage->appendContent(<<<HTML
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"></li>
             <li><img src="img/LanguagesEtOutils/php.png" width="64" loading="lazy" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/twig.png" width="64" loading="lazy" height="64" alt="PHP"></li>
             <li><img src="img/LanguagesEtOutils/COMPOSER.png" width="64" loading="lazy" height="64" alt="Composer"></li>
             <li><img src="img/LanguagesEtOutils/git.png" width="64" loading="lazy" height="64" alt="Git"></li>
         </ul>
@@ -234,6 +254,7 @@ $webpage->appendContent(<<<HTML
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"></li>
             <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
+            <li><img src="img/LanguagesEtOutils/twig.png" width="64" loading="lazy" height="64" alt="PHP"></li>
             <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
             <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
             <li><img src="img/LanguagesEtOutils/serveur-sql.png" loading="lazy" width="64" height="64" alt="SQL"></li>
@@ -267,9 +288,9 @@ $webpage->appendContent(<<<HTML
     <div class="projet-img">
         <h4>Langages et outils utilisé pour ce projet :</h4>
         <ul class="icones1">
+            <li><img src="img/LanguagesEtOutils/phaser.webp" loading="lazy" width="64" height="64" alt="phaser"></li>
             <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
             <li><img src="img/LanguagesEtOutils/git.png" loading="lazy" width="64" height="64" alt="Git"></li>
-            
         </ul>
     </div>
 </div>
