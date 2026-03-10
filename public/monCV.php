@@ -6,6 +6,9 @@ use Maxence\OfficialGitHubPortfolio\html\WebPage;
 $webpage = new WebPage();
 $webpage->setTitle("Maxence CV");
 $webpage->appendCssUrl("css/off_portfolio.css");
+$webpage->appendCssUrl("css/card-template.css");
+$webpage->appendCssUrl("css/navbar.css");
+$webpage->appendCssUrl("css/cv.css");
 
 $webpage->appendContent(<<<HTML
 <nav class="navbar">

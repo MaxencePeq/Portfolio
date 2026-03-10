@@ -1,0 +1,28 @@
+/* ========== CV PAGE ========== */
+.card-body {
+    width: 100%;
+}
+
+.card-body p, .card-body h1 {
+    text-align: center;
+}
+
+.bloccv {
+    text-align: center;
+}
+
+.cv-img {
+    width: 100%;
+    max-width: 707px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.08);
+}
+
+.cv-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

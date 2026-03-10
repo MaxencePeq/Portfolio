@@ -1,0 +1,40 @@
+/* ========== LOGOS FRAMEWORK GRID ========== */
+.laravelsymfony {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.parent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #f7fbfd;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.08);
+    min-height: 100px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.parent > div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.parent img {
+    width: 100%;
+    height: auto;
+    max-width: 90px;
+    object-fit: contain;
+}
