@@ -284,118 +284,58 @@ iframe {
 }
 
     /* ========== MEDIA QUERIES ========== */
+
+
 @media (max-width: 1200px) {
-    .card {
+    body {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .projet-img{
-        margin-right: 0;
-        margin-left: 0;
+    .projet-img {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
+    .iframe-container {
+        max-width: 720px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 992px) {
+    .titre1 { font-size: 30px; }
+    .titre2 { font-size: 22px; padding-left: 0.8rem; }
+    .projet-img { margin-left: 1.2rem; margin-right: 1.2rem; }
+    iframe { border: none; }
+    .iframe-container { max-width: 640px; height: 380px; }
 }
 
 @media (max-width: 768px) {
+    body { margin-left: 1.5rem; margin-right: 1.5rem; }
+    .card { padding: 18px; margin: 2.5rem 0.8rem; }
+    .projet-img { margin: 0 0.5rem; }
+    .titre1 { font-size: 26px; }
+    .titre2 { font-size: 20px; border-left-width: 3px; }
+    .btn1, .btn2 { width: 100%; box-sizing: border-box; }
+    .iframe-container { max-width: 560px; height: 320px; }
 
-    body{
-        margin-left: 2rem ;
-        margin-right: 2rem;
-    }
-
-    .card {
-        margin: 3rem 1rem;
-        padding: 1.5rem;
-    }
-
-    .JusteHereForMakePlace {
-        margin-top: 6rem;
-    }
-
-    .card1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .card1-img img {
-        width: 100%;
-        max-width: 280px;
-    }
-
-    .card1-texte {
-        text-align: center;
-    }
-
-    .card1-links {
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn1, .btn2 {
-        width: 100%;
-    }
-
-    .titre1 {
-        font-size: 28px;
-    }
-
-    .titre2 {
-        font-size: 24px;
-    }
-
-    .parent {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-        max-width: 100%;
-    }
-
-    .parent img {
-        max-width: 60px;
-    }
-
-    .icones1 {
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-        gap: 0.75rem;
-    }
-
-    .icones1 img {
-        width: 56px;
-        height: 56px;
-    }
-
-    .webmusic-img img,
-    .BakerySim-img img,
-    .spaceinvaders-img img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+    .iframe-container iframe { transform: scale(0.36); }
+    .icones1 { grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 0.6rem; }
+    .projet-img h4 { font-size: 0.95rem; }
 }
 
 @media (max-width: 480px) {
-    .card {
-        margin: 2rem 0.5rem;
-        padding: 1rem;
-    }
-
-    .navbar {
-        padding: 6px;
-        gap: 0.25rem;
-    }
-
-    .navbar-item {
-        width: 40px;
-        height: 40px;
-    }
-
-    .navbar-item img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .parent {
-        grid-template-columns: 1fr;
-    }
+    body { margin-left: 0.8rem; margin-right: 0.8rem; }
+    .navbar { height: 56px; padding: 0 1rem; }
+    .brand { font-size: 1.05rem; }
+    .card { padding: 12px; margin: 2rem 0.4rem; }
+    .card1-img img { width: 220px; max-width: 42vw; }
+    .iframe-container { max-width: 420px; height: 260px; }
+    .iframe-container iframe { transform: scale(0.28); transform-origin: top left; }
+    .titre1 { font-size: 22px; }
+    .titre2 { font-size: 18px; }
+    .projet-img { margin: 0; }
+    .in-stat-card img, .gitlab-graph { max-width: 95%; height: auto; }
+    .click-overlay-wrapper::after { display: none; }
 }
+
 

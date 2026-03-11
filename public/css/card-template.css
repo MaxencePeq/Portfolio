@@ -218,3 +218,38 @@
 .click-overlay-wrapper:hover::after {
     opacity: 0;
 }
+
+/* ======== MEDIA ======== */
+
+/* <= 1200 */
+@media (max-width: 1200px) {
+    .card1 { gap: 1.2rem; }
+    .card1-img img { width: 300px; max-width: 40%; }
+    .card1-texte { max-width: 520px; }
+}
+
+/* <= 992 */
+@media (max-width: 992px) {
+    .card1 { flex-direction: column-reverse; align-items: center; gap: 1rem; }
+    .card1-img img { width: 260px; max-width: 60%; margin: 0 auto; }
+    .card1-texte { text-align: center; }
+    .parent { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+}
+
+/* <= 768 */
+@media (max-width: 768px) {
+    .card1 { flex-direction: column; padding: 8px; }
+    .card1-img img { width: 220px; max-width: 70%; border-radius: 10px; }
+    .card1-texte { padding: 0 6px; }
+    .icones1 { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+    .webmusic-img img, .BakerySim-img img, .spaceinvaders-img img { width: 100%; height: auto; max-width: 100%; }
+}
+
+/* <= 480 */
+@media (max-width: 480px) {
+    .card1-img img { width: 180px; max-width: 54vw; }
+    .card1-texte { padding: 0 4px; }
+    .icones1 { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+    .in-stat-card { gap: 0.6rem; }
+    .btn1, .btn2 { padding: 10px 12px; font-size: 0.95rem; }
+}

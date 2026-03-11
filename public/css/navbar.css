@@ -85,3 +85,31 @@
 #theme-toggle:hover {
     background: #f1f5f9;
 }
+
+
+/* ======== MEDIA ======== */
+
+
+@media (max-width: 1200px) {
+    .navbar { padding: 0 1.2rem; }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 56px;
+        padding: 0 0.8rem;
+    }
+    .brand { font-size: 1.05rem; }
+    .navbar-links { gap: 0.25rem; overflow: hidden; }
+    .navbar-item { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
+    .navbar-socials { gap: 0.25rem; }
+}
+
+
+@media (max-width: 480px) {
+    .navbar-links { display: none; }
+    .navbar-socials { gap: 0.2rem; }
+    .navbar-icon { width: 32px; height: 32px; }
+}
+

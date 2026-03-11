@@ -38,3 +38,22 @@
     max-width: 90px;
     object-fit: contain;
 }
+
+
+/* ======== MEDIA ======== */
+
+@media (max-width: 992px) {
+    .parent { max-width: 380px; gap: 0.8rem; }
+    .parent img { max-width: 70px; }
+}
+
+@media (max-width: 768px) {
+    .parent { grid-template-columns: repeat(3, 1fr); max-width: 100%; }
+    .parent > div { padding: 0.6rem; min-height: 72px; }
+    .parent img { max-width: 56px; }
+}
+
+@media (max-width: 480px) {
+    .parent { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+    .parent img { max-width: 48px; }
+}
