@@ -15,8 +15,8 @@ $webpage->appendContent(<<<HTML
     <span class="brand">MP</span>
 
     <div class="navbar-links">
-        <a class="navbar-item" href="basepage.php">Accueil</a>
-        <a class="navbar-item" href="basepage.php#projects">Projets</a>
+        <a class="navbar-item" href="home.php">Accueil</a>
+        <a class="navbar-item" href="home.php#projects">Projets</a>
         <a class="navbar-item" href=autres.php>Passions et autres</a>
         <a class="navbar-item" href="monCV.php">CV</a>
     </div>
@@ -29,7 +29,8 @@ $webpage->appendContent(<<<HTML
     </div>
 </nav>
 
-HTML);  // <- Nav-bar
+HTML
+);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
 <div class="card">
@@ -44,11 +45,12 @@ $webpage->appendContent(<<<HTML
         <div class="cv-actions">
             <a class="btn1" href="img/cv.png" download>Télécharger</a>
             <button class="btn2" type="button" onclick="window.print()">Imprimer</button>
-            <a class="btn2" href="basepage.php">← Retour</a>
+            <a class="btn2" href="home.php">← Retour</a>
         </div>
         
     </div>
 </div>
-HTML);  //
+HTML
+);  //
 
 echo $webpage->toHtml();

@@ -20,10 +20,10 @@ $webpage->appendContent(<<<HTML
     <span class="brand">MP</span>
 
     <div class="navbar-links">
-        <a class="navbar-item" href="#home">Accueil</a>
-        <a class="navbar-item" href="#projects">Projets</a>
-        <a class="navbar-item" href="autres.php">Passions et autres</a>
-        <a class="navbar-item" href="monCV.php">CV</a>
+        <a class="navbar-item" href="../home.php">Accueil</a>
+        <a class="navbar-item" href="../home.php#projects">Projets</a>
+        <a class="navbar-item" href="../autres.php">Passions et autres</a>
+        <a class="navbar-item" href="../monCV.php">CV</a>
     </div>
 
     <div class="navbar-socials">
@@ -34,7 +34,8 @@ $webpage->appendContent(<<<HTML
     </div>
 </nav>
 
-HTML);  // <- Nav-bar
+HTML
+);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
 <div class="spacement" style="margin-top: 8rem">
@@ -42,7 +43,6 @@ $webpage->appendContent(<<<HTML
          data-aos-duration="1000" class="z">
         <div class="card">
             <h2 class="titre2">Ces projets sont en développement...</h2>
-            <p> <a href="../basepage.php"> Retour à la page d'accueil</a></p>
         </div>
     </div>  
 </div>
