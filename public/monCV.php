@@ -16,8 +16,8 @@ $webpage->appendContent(<<<HTML
 
     <div class="navbar-links">
         <a class="navbar-item" href="basepage.php">Accueil</a>
-        <a class="navbar-item" href="#projects">Projets</a>
-        <a class="navbar-item" href="#autres">Passions et autres</a>
+        <a class="navbar-item" href="basepage.php#projects">Projets</a>
+        <a class="navbar-item" href=autres.php>Passions et autres</a>
         <a class="navbar-item" href="monCV.php">CV</a>
     </div>
 
