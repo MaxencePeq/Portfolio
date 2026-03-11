@@ -21,6 +21,7 @@ $webpage->appendToHead(<<<HTML
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <meta name="description" content="Ceci site est un portfolio qui me présente (PEQUENO MAXENCE) En tant que développeur web/application junior">
+<link rel="icon" type="image/png" href="img/favicon.ico"/>
 HTML);
 
 $webpage->appendContent(<<<HTML
