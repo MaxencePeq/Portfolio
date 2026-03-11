@@ -87,29 +87,37 @@
 }
 
 
-/* ======== MEDIA ======== */
-
-
-@media (max-width: 1200px) {
-    .navbar { padding: 0 1.2rem; }
-}
-
+/* ===== Compact responsive navbar (colle à la fin de css/navbar.css) ===== */
 
 @media (max-width: 768px) {
-    .navbar {
-        height: 56px;
-        padding: 0 0.8rem;
+    .navbar { padding: 0 0.6rem; height: 60px; }
+    .navbar-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        justify-content: center;
+        width: auto;
+        margin: 0 8px;
     }
-    .brand { font-size: 1.05rem; }
-    .navbar-links { gap: 0.25rem; overflow: hidden; }
-    .navbar-item { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
-    .navbar-socials { gap: 0.25rem; }
+    .navbar-item {
+        flex: 0 1 auto;
+        min-width: 0;
+        padding: 0.25rem 0.5rem;
+        font-size: clamp(12px, 1.4vw, 14px);
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .navbar-socials { margin-left: 6px; }
+    .navbar-icon { width: 34px; height: 34px; }
 }
-
 
 @media (max-width: 480px) {
-    .navbar-links { display: none; }
-    .navbar-socials { gap: 0.2rem; }
-    .navbar-icon { width: 32px; height: 32px; }
+    .navbar { height: 56px; padding: 0 0.4rem; }
+    .navbar-links { gap: 0.18rem; margin: 0 4px; }
+    .navbar-item { font-size: clamp(10px, 2.6vw, 12px); padding: 0.18rem 0.35rem; }
+    .navbar-icon { width: 30px; height: 30px; }
 }
+
 

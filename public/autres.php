@@ -18,7 +18,7 @@ $webpage->appendContent(<<<HTML
     <div class="navbar-links">
         <a class="navbar-item" href="home.php">Accueil</a>
         <a class="navbar-item" href="home.php#projects">Projets</a>
-        <a class="navbar-item" href="">Passions et autres</a>
+        <a class="navbar-item" href="autres.php">Autres</a>
         <a class="navbar-item" href="monCV.php">CV</a>
     </div>
 
@@ -30,8 +30,7 @@ $webpage->appendContent(<<<HTML
     </div>
 </nav>
 
-HTML
-);  // <- Nav-bar
+HTML);  // <- Nav-bar
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"

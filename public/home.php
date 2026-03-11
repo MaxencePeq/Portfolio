@@ -29,7 +29,7 @@ $webpage->appendContent(<<<HTML
     <div class="navbar-links">
         <a class="navbar-item" href="home.php">Accueil</a>
         <a class="navbar-item" href="#projects">Projets</a>
-        <a class="navbar-item" href="autres.php">Passions et autres</a>
+        <a class="navbar-item" href="autres.php">Autres</a>
         <a class="navbar-item" href="monCV.php">CV</a>
     </div>
 
