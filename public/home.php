@@ -27,7 +27,7 @@ $webpage->appendContent(<<<HTML
     <span class="brand">MP</span>
 
     <div class="navbar-links">
-        <a class="navbar-item" href="#home">Accueil</a>
+        <a class="navbar-item" href="home.php">Accueil</a>
         <a class="navbar-item" href="#projects">Projets</a>
         <a class="navbar-item" href="autres.php">Passions et autres</a>
         <a class="navbar-item" href="monCV.php">CV</a>
@@ -302,7 +302,7 @@ $webpage->appendContent(<<<HTML
               id="inlineFrameExample"
               title="Exemple de cadre intégré"
               height="550"
-              src="https://bakerysimulator.alwaysdata.net/SpaceInvader/"
+              src="https://pequeno-maxence.alwaysdata.net/SpaceInvader/"
               loading="lazy">
             </iframe>
         </div>
@@ -324,7 +324,7 @@ $webpage->appendContent(<<<HTML
         <div id="BakerySimulator" class="card4">
         
         <div class="title">
-            <h2> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator</a> </h2>
+            <h2> (2025) <a href="https://github.com/MaxencePeq/BakerySimulator"> BakerySimulator (Arrêt temporaire)</a> </h2>
             <p> Est un simulateur de gestion de boulangerie de type "Idle / Autoclicker" ! Jouable sur : <a href="https://bakerysimulator.alwaysdata.net/BakerySimulator/public/index.php"> bakerysimulator </a> <br> Un debug-mode a été ajouté en plus du système de compte pour modérer les comptes.  </p>
         </div>
         
