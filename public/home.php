@@ -20,6 +20,7 @@ $webpage->appendCssUrl("css/carrousel.css"); // link css du carrousel
 $webpage->appendToHead(<<<HTML
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="Ceci site est un portfolio qui me présente (PEQUENO MAXENCE) En tant que développeur web/application junior">
 HTML);
 
 $webpage->appendContent(<<<HTML
@@ -100,7 +101,7 @@ $webpage->appendContent(<<<HTML
     <h2 class="titre2">Statistiques GitHub</h2>
         <h3 class="in-stat-card">
         
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MaxencePeq" />
+            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MaxencePeq" alt="Profil github" />
             
             <h3 class="middle">
                 <p>Statistique Github</p>
@@ -174,17 +175,17 @@ $webpage->appendContent(<<<HTML
     </div>
 </div>
 
-HTML); // <- Compétences
+HTML); // <-- Compétences
 
 $webpage->appendContent(<<<HTML
 <div id="projects" data-aos="fade-up"
      data-aos-duration="1000" class="card">
-    <div id="LebelOuvrage"" class="card4">
+    <div id="LebelOuvrage" class="card4">
         <h2 class="titre2">Projets professionels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
         <div class="title"> 
             <h2> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> </h2>
-            <p> Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> <br> Lien : <a href="http://lebelouvrage.bzh>"> Lebelouvrage.bzh</a> </p>
+            <p> Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> <br> Lien : <a href="https://lebelouvrage.bzh>"> Lebelouvrage.bzh</a> </p>
         </div>
         
         <div style="display:flex; justify-content:center; margin-top:1.5rem;">
@@ -207,7 +208,8 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>    
-HTML); // <-- LebelOuvrage
+HTML
+); // <-- LebelOuvrage
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
