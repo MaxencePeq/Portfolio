@@ -186,7 +186,7 @@ $webpage->appendContent(<<<HTML
         
         <div class="title"> 
             <h2> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> </h2>
-            <p> Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> <br> Lien : <a href="https://lebelouvrage.bzh>"> Lebelouvrage.bzh</a> </p>
+            <p> Est un site vitrine pour un artisan fait en collaboration avec mon collègue <a href="https://calvin-nogueira.fr/"> Calvin Nogueira</a> <br> Lien : <a href="https://lebelouvrage.bzh"> Lebelouvrage.bzh</a> </p>
         </div>
         
         <div style="display:flex; justify-content:center; margin-top:1.5rem;">
@@ -209,8 +209,7 @@ $webpage->appendContent(<<<HTML
         </ul>
     </div>
 </div>    
-HTML
-); // <-- LebelOuvrage
+HTML); // <-- LebelOuvrage
 
 $webpage->appendContent(<<<HTML
 <div data-aos="fade-up"
