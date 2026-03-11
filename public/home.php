@@ -131,7 +131,7 @@ $webpage->appendContent(<<<HTML
         <h2 class="titre2">Parcours</h2>
         <p class="txt1">Diplômé d’un baccalauréat général avec spécialités Sciences Numériques et Mathématiques. (Lycée Franklin Roosevelt, Reims — 2024) </p>
         <p class="txt1">Actuellement en 2<sup>e</sup> année d’IUT Informatique à Reims (spécialisation développement C#).</p>
-        <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique, puis un petit jeu web Idle/Autoclicker pendant l’été. Suivis d'un projet académique de réseau social étudiant et un site vitrine pour un artisant.</p>
+        <p class="txt1">J’explore et j’apprends au travers de projets personnels (voir mon GitHub) : un mini site de référencement de musique, puis un petit jeu web Idle/Autoclicker pendant l’été. Suivi d'un projet académique de réseau social étudiant et un site vitrine pour un artisan.</p>
     </div>
 
 </div>
@@ -182,7 +182,7 @@ $webpage->appendContent(<<<HTML
 <div id="projects" data-aos="fade-up"
      data-aos-duration="1000" class="card">
     <div id="LebelOuvrage" class="card4">
-        <h2 class="titre2">Projets professionels <h5> <em> Les photos des projets sont cliquable, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
+        <h2 class="titre2">Projets professionels <h5> <em> Les photos des projets sont cliquables, ouvrant un carrousel d'images. Les projets sont sur mon <a href="https://github.com/MaxencePeq">github</a> </em> </h5> </h2> 
         
         <div class="title"> 
             <h2> (2026) <a href="https://lebelouvrage.bzh"> Lebel Ouvrage </a> </h2>
@@ -199,7 +199,7 @@ $webpage->appendContent(<<<HTML
     </div>
     
     <div class="projet-img">
-        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <h4>Langages et outils utilisés pour ce projet :</h4>
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"></li>
             <li><img src="img/LanguagesEtOutils/php.png" width="64" loading="lazy" height="64" alt="PHP"></li>
@@ -219,7 +219,7 @@ $webpage->appendContent(<<<HTML
         
         <div class="title">
             <h2> (2026) <a href="https://github.com/MaxencePeq/Website-Colorblind-Extension"> Website for Colorblind </a> : </h2>
-            <p> Est une extension permettant de modifier la couleur de certains paramètres pour permettre au daltonien d'adapter la page en cours. </p>
+            <p> Est une extension permettant de modifier la couleur de certains paramètres pour permettre aux daltoniens d'adapter la page en cours. </p>
         </div>
         <div style="display:flex; justify-content:center; margin-top:1.5rem;">
             <div class="click-overlay-wrapper">
@@ -231,7 +231,7 @@ $webpage->appendContent(<<<HTML
     </div>
     
     <div class="projet-img">
-        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <h4>Langages et outils utilisés pour ce projet :</h4>
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
             <li><img src="img/LanguagesEtOutils/html-5.png" loading="lazy" width="64" height="64" alt="HTML"></li>
@@ -274,7 +274,7 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
     <div class="projet-img">
-        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <h4>Langages et outils utilisés pour ce projet :</h4>
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/symfony-icon.png" loading="lazy" width="64" height="64" alt="Symfony"></li>
             <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
@@ -310,7 +310,7 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
     <div class="projet-img">
-        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <h4>Langages et outils utilisés pour ce projet :</h4>
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/phaser.webp" loading="lazy" width="64" height="64" alt="phaser"></li>
             <li><img src="img/LanguagesEtOutils/js.png" loading="lazy" width="64" height="64" alt="Javascript"></li>
@@ -339,7 +339,7 @@ $webpage->appendContent(<<<HTML
         </div>
         
            <div class="projet-img">
-            <h4>Langages et outils utilisé pour ce projet :</h4>
+            <h4>Langages et outils utilisés pour ce projet :</h4>
                 <ul class="icones1">
                     <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
                     <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
@@ -368,7 +368,7 @@ $webpage->appendContent(<<<HTML
         </div>
     </div>
     <div class="projet-img">
-        <h4>Langages et outils utilisé pour ce projet :</h4>
+        <h4>Langages et outils utilisés pour ce projet :</h4>
         <ul class="icones1">
             <li><img src="img/LanguagesEtOutils/php.png" loading="lazy" width="64" height="64" alt="PHP"></li>
             <li><img src="img/LanguagesEtOutils/COMPOSER.png" loading="lazy" width="64" height="64" alt="Composer"></li>
