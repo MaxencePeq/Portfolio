@@ -71,7 +71,7 @@ $webpage->appendContent(<<<HTML
                                 </a>
                             </div>
                             <div class="div3">
-                                <a href="#Symfony">
+                                <a href="#projects">
                                     <img src="img/logoIndex/symfony.png" loading="lazy" alt="Symfony">
                                  </a>
                             </div>
