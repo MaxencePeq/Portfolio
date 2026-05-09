@@ -43,7 +43,7 @@ export default function Navbar({ darkmode, setDarkmode }: navbarProps) {
       <div className="flex flex-row gap-4">
         <a href="https://github.com/MaxencePeq">
           <img
-            src="../../public/img/navbar/githubIcon.png"
+            src="/img/navbar/githubIcon.png"
             alt="GitHub"
             className="w-6 h-6"
           />
@@ -51,14 +51,14 @@ export default function Navbar({ darkmode, setDarkmode }: navbarProps) {
 
         <a href="https://www.linkedin.com/in/maxence-pequeno-671581329/">
           <img
-            src="../../public/img/navbar/linkedin.png"
+            src="/img/navbar/linkedin.png"
             alt="linkedin"
             className="w-6 h-6"
           />
         </a>
         <a href="https://www.instagram.com/pianomaxence/">
           <img
-            src="../../public/img/navbar/instagram.png"
+            src="/img/navbar/instagram.png"
             alt="instagram"
             className="w-6 h-6"
           />
