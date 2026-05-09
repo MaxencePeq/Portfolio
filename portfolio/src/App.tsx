@@ -3,8 +3,12 @@ import Navbar from "./component/navbar";
 import Darkbox from "./component/darkbox";
 import Lightbox from "./component/lightbox";
 
-function App() {
-  const [darkmode, setDarkmode] = useState(true);
+type AppProps = {
+  AppIsDarkmode: boolean;
+};
+
+function App({ AppIsDarkmode }: AppProps) {
+  const [darkmode, setDarkmode] = useState(AppIsDarkmode);
 
   let bgColor = "bg-[#FEFEFE]";
   if (darkmode) {
