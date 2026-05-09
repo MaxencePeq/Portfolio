@@ -20,11 +20,11 @@ export default function Navbar({ darkmode, setDarkmode }: navbarProps) {
 
   return (
     <div
-      className={`flex flex-row ${bgColor} p-4 px-6 justify-between items-center shadow-lg`}
+      className={`flex flex-row ${bgColor} p-3 px-6 justify-between items-center shadow-lg`}
     >
       {/* Liens vers les différentes sections du site */}
       <p className={`${titleColor} font-bold text-xl`}>MP</p>
-      <div className={`${textColor} text-sm flex flex-row gap-10`}>
+      <div className={`${textColor} text-sm flex flex-row gap-6`}>
         <a href="" className={`${hover}`}>
           Accueil
         </a>
