@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./component/navbar";
 import Darkbox from "./component/darkbox";
+import Lightbox from "./component/lightbox";
 
 function App() {
   const [darkmode, setDarkmode] = useState(true);
@@ -19,6 +20,16 @@ function App() {
           content={
             <>
               <p className="text-4xl text-white">Portfolio coming soon...</p>
+              <Lightbox
+                darkmode={darkmode}
+                image={
+                  <img
+                    src="/img/navbar/instagram.png"
+                    alt="??"
+                    className="max-w-12 max-h-12"
+                  />
+                }
+              />
             </>
           }
         />
