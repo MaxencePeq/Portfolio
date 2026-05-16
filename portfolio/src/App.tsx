@@ -24,13 +24,14 @@ function App({ AppIsDarkmode }: AppProps) {
    * @returns
    */
   const section = (content: React.ReactNode) => (
-    <section className="snap-start h-screen flex flex-col items-center justify-center pt-16">
+    <section className="snap-start min-h-screen flex flex-col items-center justify-center pt-20 pb-8 px-4 sm:px-6 lg:px-8">
       <motion.div
+        className="w-full max-w-6xl"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-        viewport={{ once: false, amount: 0.6 }}
+        viewport={{ once: false, amount: 0.4 }}
       >
         {content}
       </motion.div>
