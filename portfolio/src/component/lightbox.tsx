@@ -6,7 +6,7 @@ type LightboxProps = {
 export default function Lightbox({ darkmode, image }: LightboxProps) {
   const bgColor = darkmode ? "bg-[#3A3A5A]" : "bg-white";
   const borderColor = darkmode ? "border-gray-600" : "border-white";
-  const hover = "hover:-translate-y-[1px] transition-transform duration-100";
+  const hover = "hover:-translate-y-[2px] transition-transform duration-200";
 
   return (
     <div

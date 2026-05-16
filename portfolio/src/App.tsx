@@ -3,6 +3,7 @@ import Navbar from "./component/navbar";
 import Darkbox from "./component/darkbox";
 import Lightbox from "./component/lightbox";
 import { motion } from "framer-motion";
+import SectionHome from "./component/section/SectionHome";
 
 type AppProps = {
   AppIsDarkmode: boolean;
@@ -26,7 +27,7 @@ function App({ AppIsDarkmode }: AppProps) {
   const section = (content: React.ReactNode) => (
     <section className="snap-start min-h-screen flex flex-col items-center justify-center pt-20 pb-8 px-4 sm:px-6 lg:px-8">
       <motion.div
-        className="w-full max-w-6xl"
+        className=""
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -45,63 +46,7 @@ function App({ AppIsDarkmode }: AppProps) {
       </div>
 
       <main className="h-screen overflow-y-scroll snap-y snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-        {section(
-          <Darkbox
-            darkmode={darkmode}
-            content={
-              <div className="flex flex-row gap-x-14">
-                <img
-                  src="/img/me/mePhoto.png"
-                  className="rounded-xl w-100 h-100 object-cover flex-shrink-0"
-                />
-                <div className="flex flex-col flex-1 gap-4 items-center">
-                  <p className="text-white text-[50px] font-semibold">
-                    Maxence Pequeno
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 w-full p-8">
-                    <Lightbox
-                      darkmode={darkmode}
-                      image={
-                        <img
-                          src="../public/img/stacks/laravel.png"
-                          className="p-5"
-                        />
-                      }
-                    />
-                    <Lightbox
-                      darkmode={darkmode}
-                      image={
-                        <img
-                          src="../public/img/stacks/react.webp"
-                          className="p-5"
-                        />
-                      }
-                    />
-                    <Lightbox
-                      darkmode={darkmode}
-                      image={
-                        <img
-                          src="../public/img/stacks/symfony.png"
-                          className="p-5"
-                        />
-                      }
-                    />
-                    <Lightbox
-                      darkmode={darkmode}
-                      image={
-                        <img
-                          src="../public/img/stacks/API.png"
-                          className="p-5"
-                        />
-                      }
-                    />
-                  </div>
-                  <div className="">{/* FUTUR BOUTON */}</div>
-                </div>
-              </div>
-            }
-          />,
-        )}
+        {section(<SectionHome darkmode={darkmode} />)}
 
         {section(
           <Darkbox
