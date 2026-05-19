@@ -30,6 +30,7 @@ export default function SectionHome({ darkmode }: SectionHomeProps) {
                     className="p-6 sm:p-10 md:p-15"
                   />
                 }
+                ImageBlockingHeight={true}
               />
               <Lightbox
                 darkmode={darkmode}
@@ -39,6 +40,7 @@ export default function SectionHome({ darkmode }: SectionHomeProps) {
                     className="p-6 sm:p-10 md:p-15"
                   />
                 }
+                ImageBlockingHeight={true}
               />
               <Lightbox
                 darkmode={darkmode}
@@ -48,6 +50,7 @@ export default function SectionHome({ darkmode }: SectionHomeProps) {
                     className="p-5 sm:p-8 md:p-12"
                   />
                 }
+                ImageBlockingHeight={true}
               />
               <Lightbox
                 darkmode={darkmode}
@@ -57,18 +60,26 @@ export default function SectionHome({ darkmode }: SectionHomeProps) {
                     className="p-4 sm:p-7 md:p-10"
                   />
                 }
+                ImageBlockingHeight={true}
               />
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-evenly w-full gap-3 sm:gap-2">
-              <DarkButton text="Voir mon CV" dark={true} darkmode={darkmode} />
+            <div className="flex flex-row xs:items-center justify-evenly w-full gap-3 sm:gap-2">
               <DarkButton
-                text="Projets Github"
+                text="Voir mon CV"
+                textMobile="CV"
+                dark={true}
+                darkmode={darkmode}
+              />
+              <DarkButton
+                text="Mon Github"
+                textMobile="Github"
                 dark={false}
                 darkmode={darkmode}
               />
               <DarkButton
                 text="Me contacter"
+                textMobile="Contact"
                 dark={false}
                 darkmode={darkmode}
               />
