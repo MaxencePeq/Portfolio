@@ -3,20 +3,24 @@ import SectionGithub from "./component/section/SectionGithub";
 import SectionPassionButton from "./component/button/passionButton";
 import { section } from "./utils/section";
 import ComponentPage from "./component/page";
+import { useState } from "react";
 
 type AppProps = {
   AppIsDarkmode: boolean;
 };
 
 function App({ AppIsDarkmode }: AppProps) {
+  const [darkmode, setDarkmode] = useState(AppIsDarkmode);
+
   return (
     <ComponentPage
-      AppIsDarkmode={AppIsDarkmode}
+      darkmode={darkmode}
+      setDarkmode={setDarkmode}
       content={
         <>
-          {section(<SectionHome darkmode={AppIsDarkmode} />)}
-          {section(<SectionGithub darkmode={AppIsDarkmode} />)}
-          {section(<SectionPassionButton darkmode={AppIsDarkmode} />)}
+          {section(<SectionHome darkmode={darkmode} />)}
+          {section(<SectionGithub darkmode={darkmode} />)}
+          {section(<SectionPassionButton darkmode={darkmode} />)}
         </>
       }
     />

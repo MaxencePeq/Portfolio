@@ -57,6 +57,7 @@ export default function SectionPassionButton({ darkmode }: SectionProps) {
           </div>
         </div>
       }
+      number={3}
     />
   );
 }

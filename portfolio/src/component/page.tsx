@@ -1,14 +1,12 @@
-import { useState } from "react";
 import Navbar from "./navbar";
 
 type AppProps = {
-  AppIsDarkmode: boolean;
+  darkmode: boolean;
+  setDarkmode: (v: boolean) => void;
   content: React.ReactNode;
 };
 
-function ComponentPage({ AppIsDarkmode, content }: AppProps) {
-  const [darkmode, setDarkmode] = useState(AppIsDarkmode);
-
+function ComponentPage({ darkmode, setDarkmode, content }: AppProps) {
   const bgColor = darkmode ? "bg-[#181E37]" : "bg-[#FEFEFE]";
 
   return (

@@ -90,6 +90,7 @@ export default function SectionHome({ darkmode }: SectionHomeProps) {
           </div>
         </div>
       }
+      number={1}
     />
   );
 }
