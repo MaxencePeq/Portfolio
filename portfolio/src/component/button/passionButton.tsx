@@ -1,5 +1,5 @@
 import { getLeftBorderColor } from "../../utils/infoCalc";
-import Darkbox from "../darkbox";
+import Darkbox from "../box/darkbox";
 import DarkButton from "./darkButton";
 
 type SectionProps = {

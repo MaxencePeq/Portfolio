@@ -4,8 +4,8 @@ import {
   getMode,
   getGitChartTextColor,
 } from "../../utils/infoCalc";
-import Darkbox from "../darkbox";
-import Lightbox from "../lightbox";
+import Darkbox from "../box/darkbox";
+import Lightbox from "../box/lightbox";
 
 type SectionProps = {
   darkmode: boolean;
