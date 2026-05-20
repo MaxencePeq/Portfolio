@@ -36,12 +36,14 @@ export default function SectionPassions({ darkmode }: SectionProps) {
   const textColor = darkmode ? "text-[#E0E0E0]" : "text-white";
   const textClasse = `${textColor} text-lg`;
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex w-full min-w-0 flex-col gap-y-4">
       <Darkbox
         darkmode={darkmode}
         content={
-          <div className="flex flex-col gap-6">
-            <p className={`${textColor} text-3xl font-semibold text-center`}>
+          <div className="flex min-w-0 flex-col gap-6">
+            <p
+              className={`${textColor} text-2xl sm:text-3xl font-semibold text-center`}
+            >
               Mes Passions
             </p>
             <div className="flex flex-col gap-4 mt-4">

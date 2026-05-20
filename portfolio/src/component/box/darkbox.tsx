@@ -15,12 +15,12 @@ export default function Darkbox({ darkmode, content, number }: DarkboxProps) {
     numberBorderColor = "border-[#1E1E30]";
   }
 
-  const responsiveClasses = `xl:max-w-[1100px] xl:min-w-[1100px]`;
+  const responsiveClasses = `w-full max-w-[1100px] min-w-0 mx-auto`;
   const hover = "hover:-translate-y-[2px] transition-transform duration-200";
 
   return (
     <div
-      className={`${bgColor} relative flex-wrap shadow-sm p-[3rem] border-1 ${borderColor} rounded-2xl ${responsiveClasses} ${hover}`}
+      className={`${bgColor} relative flex-wrap shadow-sm p-5 sm:p-8 lg:p-12 border-1 ${borderColor} rounded-2xl ${responsiveClasses} ${hover}`}
     >
       {number !== undefined && (
         <span

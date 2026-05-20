@@ -20,12 +20,16 @@ export default function Bookbox({
     h = "h-32";
   }
   return (
-    <div>
+    <div className="w-full min-w-0">
       <div
-        className={`${bgColor} ${h} p-7 lg:max-w-50 lg:min-w-50 lg:max-h-65  border ${borderColor} rounded-xl flex flex-col gap-y-4 justify-center items-center text-center overflow-hidden}`}
+        className={`${bgColor} ${h} w-full min-w-0 max-w-52 p-4 sm:p-5 lg:p-7 border ${borderColor} rounded-xl flex flex-col gap-y-3 sm:gap-y-4 justify-center items-center text-center overflow-hidden}`}
       >
         {image}
-        <p className={`${textColor} text-sm font-semibold`}>{booktitle}</p>
+        <p
+          className={`${textColor} w-full min-w-0 break-words text-xs sm:text-sm font-semibold leading-snug`}
+        >
+          {booktitle}
+        </p>
       </div>
     </div>
   );
