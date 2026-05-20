@@ -1,0 +1,48 @@
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import ComponentPage from "./component/page";
+import SectionHome from "./component/section/SectionHome";
+import SectionGithub from "./component/section/SectionGithub";
+import SectionPassionButton from "./component/button/passionButton";
+import PassionsPage from "./component/pages/passionsPage";
+import { section } from "./utils/section";
+
+type RoutesProps = {
+  AppIsDarkmode: boolean;
+};
+
+export default function AppRoutes({ AppIsDarkmode }: RoutesProps) {
+  const [darkmode, setDarkmode] = useState(AppIsDarkmode);
+
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <ComponentPage
+            darkmode={darkmode}
+            setDarkmode={setDarkmode}
+            content={
+              <>
+                {section(<SectionHome darkmode={darkmode} />)}
+                {section(<SectionGithub darkmode={darkmode} />)}
+                {section(<SectionPassionButton darkmode={darkmode} />)}
+              </>
+            }
+          />
+        }
+      />
+
+      <Route
+        path="/passions"
+        element={
+          <ComponentPage
+            darkmode={false}
+            setDarkmode={setDarkmode}
+            content={<></>}
+          />
+        }
+      />
+    </Routes>
+  );
+}
