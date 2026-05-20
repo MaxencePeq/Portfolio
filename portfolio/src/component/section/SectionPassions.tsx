@@ -6,8 +6,30 @@ type SectionProps = {
 };
 
 const images = [
-  { src: "/img/illustration/bojangles.jpg", alt: "Bojangles" },
-  { src: "/img/illustration/pianist.jpg", alt: "Peinture pianiste" },
+  {
+    src: "/img/illustration/bojangles.jpg",
+    title: "En attendant bojangles",
+  },
+  {
+    src: "/img/illustration/glg.jpg",
+    title: "Gagner la guerre",
+  },
+  { src: "/img/illustration/gary.jpg", title: "La promesse de l'aube" },
+  {
+    src: "/img/illustration/lmdf.jpg",
+    title: "La Maison des Feuilles",
+  },
+  {
+    src: "/img/illustration/lotr.jpg",
+    title: "Le seigneur des anneaux",
+  },
+  { src: "/img/illustration/witcher.jpg", title: "The witcher" },
+  {
+    src: "/img/illustration/wager.jpg",
+    title: "Les naufragées du Wager",
+  },
+  { src: "/img/illustration/petitprince.jpg", title: "Le petit prince" },
+  { src: "/img/illustration/foret.jpg", title: "L'appel de la fôret" },
 ];
 
 export default function SectionPassions({ darkmode }: SectionProps) {
@@ -39,7 +61,10 @@ export default function SectionPassions({ darkmode }: SectionProps) {
           </div>
         }
       />
-      <Darkbox darkmode={darkmode} content={<Slider images={images} />} />
+      <Darkbox
+        darkmode={darkmode}
+        content={<Slider images={images} darkmode={darkmode} />}
+      />
     </div>
   );
 }

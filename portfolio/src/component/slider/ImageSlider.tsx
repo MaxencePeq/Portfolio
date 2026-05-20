@@ -2,11 +2,12 @@ import { useEffect, useRef } from "react";
 import Splide from "@splidejs/splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/css";
+import Bookbox from "../box/bookbox";
 
-type Image = { src: string; alt: string };
-type SliderProps = { images: Image[] };
+type Image = { src: string; title: string };
+type SliderProps = { images: Image[]; darkmode: boolean };
 
-export default function Slider({ images }: SliderProps) {
+export default function Slider({ images, darkmode }: SliderProps) {
   const splideRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -15,12 +16,12 @@ export default function Slider({ images }: SliderProps) {
     const splide = new Splide(splideRef.current, {
       type: "loop",
       drag: false,
-      perPage: 3,
+      perPage: 4,
       gap: "1rem",
       arrows: false,
       pagination: false,
       autoScroll: {
-        speed: 1, // vitesse du défilement (ajuste à ton goût)
+        speed: 1,
         pauseOnHover: false,
         pauseOnFocus: false,
       },
@@ -31,7 +32,7 @@ export default function Slider({ images }: SliderProps) {
     return () => {
       splide.destroy();
     };
-  }, []);
+  }, [darkmode, images]);
 
   return (
     <div ref={splideRef} className="splide w-full h-auto">
@@ -42,10 +43,16 @@ export default function Slider({ images }: SliderProps) {
               key={index}
               className="splide__slide flex items-center justify-center"
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="h-32 object-contain rounded-lg max-w-full"
+              <Bookbox
+                darkmode={darkmode}
+                image={
+                  <img
+                    src={img.src}
+                    alt={img.title}
+                    className=" h-42 object-contain rounded-lg max-w-full"
+                  />
+                }
+                booktitle={img.title}
               />
             </li>
           ))}
